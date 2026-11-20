@@ -7,7 +7,18 @@ from pathlib import Path
 import pandas as pd
 import yaml
 
-ROOT = Path(__file__).resolve().parents[1]
+import os
+
+
+def _find_root() -> Path:
+    """Project root: $LUXFIN_ROOT, else the source checkout, else the current directory."""
+    if os.environ.get("LUXFIN_ROOT"):
+        return Path(os.environ["LUXFIN_ROOT"]).resolve()
+    src = Path(__file__).resolve().parents[1]
+    return src if (src / "config" / "default.yaml").exists() else Path.cwd()
+
+
+ROOT = _find_root()
 
 
 def resolve(path: str | Path, root: Path = ROOT) -> Path:
