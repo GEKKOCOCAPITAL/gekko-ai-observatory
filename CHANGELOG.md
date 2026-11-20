@@ -3,6 +3,7 @@
 ## 0.9.1 - 2026-11-20
 - Fix: the toolkit now finds its data and configuration when installed as a regular package (pip install . / Docker / CI).
 - Repository renamed to gekko-ai-observatory.
+- Internal review by the project leader recorded (docs/workshop/internal_review_2026-11-20.md, FB-001 to FB-008); report updated. External expert workshop still pending.
 
 ## 0.9.0 - 2026-11-20 (milestone M3, pre-workshop)
 - O3 impact scenario module: three scenarios, 10,000 Monte-Carlo draws each, p05/p50/p95 ranges, sensitivity analysis.

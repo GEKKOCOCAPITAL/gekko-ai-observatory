@@ -1,2 +1,9 @@
 id,date,reviewer_role,organisation_type,module,item_id,comment,severity,proposed_change,decision,owner,status
-FB-001,,,,O4 risk,R03,,,,,,open
+FB-001,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O4 risk,A1-A2,Agree: taxonomy complete and correctly mapped to AI Act / DORA / FSB,none,none,no change,Rafael Mendes,closed
+FB-002,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O4 risk,A3-A4,Agree: use-case ranking and default control coverage realistic,none,none,no change,Rafael Mendes,closed
+FB-003,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O4 risk,A5,Agree: indicative AI Act classification of 13 archetypes correct,none,none,no change,Rafael Mendes,closed
+FB-004,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O3 scenarios,B1,Agree: 2030 scenario ranges plausible,none,none,no change,Rafael Mendes,closed
+FB-005,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O1 exposure,B2,Agree: task-level exposure scores credible for Luxembourg roles,none,none,no change,Rafael Mendes,closed
+FB-006,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O3 scenarios,B3,Agree: uncertainty and caveats sufficient,none,none,no change,Rafael Mendes,closed
+FB-007,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O5 usability,C1,Usability score 5/5 (very easy),none,none,no change,Rafael Mendes,closed
+FB-008,2026-11-20,Project leader (internal review),Gekko & Co. Capital SCSp / RM MANAGEMENT SPF,O5 usability,C2,Would use: exposure index; use-case risk assessor; risk grid/heatmap; impact scenarios. No missing outputs named,none,none,no change,Rafael Mendes,closed

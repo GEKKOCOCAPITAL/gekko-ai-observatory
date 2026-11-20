@@ -171,6 +171,20 @@ def check_risk(inputs: dict, grid: pd.DataFrame) -> list[dict]:
     out.append(_r("O4", "Benchmark: employment-weighted share of AI use classified high-risk vs CSSF/BCL self-assessment (5%)",
                   "PASS" if 0.02 <= share <= 0.12 else "REVIEW", f"{share:.1%}", "2%-12% (5% +/- survey uncertainty incl. 29% unclassified)"))
 
+    from pathlib import Path
+    log = Path(__file__).resolve().parents[1] / "docs" / "workshop" / "feedback_log.csv"
+    if not log.exists():
+        log = Path.cwd() / "docs" / "workshop" / "feedback_log.csv"
+    if log.exists():
+        fb = pd.read_csv(log).dropna(subset=["date"])
+        internal = fb[fb["reviewer_role"].str.contains("internal", case=False, na=False)]
+        external = fb[~fb.index.isin(internal.index)]
+        out.append(_r("O4", "Internal review by the project leader (review form A1-C2)", "INFO" if len(internal) else "PENDING",
+                      f"{len(internal)} items logged; {int((internal['decision'] == 'no change').sum())} no change requested",
+                      "", "docs/workshop/internal_review_2026-11-20.md; does not replace the external expert workshop"))
+        n_ext = external["owner"].nunique() if len(external) else 0
+    else:
+        n_ext = 0
     out.append(_r("O4", "Expert review of taxonomy, weights and control coverage (validation workshop)", "PENDING",
                   "review form and Fleiss-kappa scorer ready (docs/workshop)", "kappa >= 0.40 and all critical comments resolved",
                   "Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv"))

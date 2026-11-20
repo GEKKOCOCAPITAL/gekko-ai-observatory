@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T14:28:54+00:00",
+ "generated": "2026-11-20T15:44:56+00:00",
  "version": "0.9.1",
  "subsectors": [
   {
@@ -22303,6 +22303,15 @@
   {
    "id": "V22",
    "objective": "O4",
+   "check": "Internal review by the project leader (review form A1-C2)",
+   "status": "INFO",
+   "value": "8 items logged; 8 no change requested",
+   "threshold": "",
+   "note": "docs/workshop/internal_review_2026-11-20.md; does not replace the external expert workshop"
+  },
+  {
+   "id": "V23",
+   "objective": "O4",
    "check": "Expert review of taxonomy, weights and control coverage (validation workshop)",
    "status": "PENDING",
    "value": "review form and Fleiss-kappa scorer ready (docs/workshop)",
@@ -22310,7 +22319,7 @@
    "note": "Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv"
   },
   {
-   "id": "V23",
+   "id": "V24",
    "objective": "O5",
    "check": "Determinism: identical results when re-run with the same seed",
    "status": "PASS",
@@ -22319,7 +22328,7 @@
    "note": ""
   },
   {
-   "id": "V24",
+   "id": "V25",
    "objective": "O5",
    "check": "Employment covered by integrated sub-sectors (CSSF/CAA-registered entities)",
    "status": "INFO",

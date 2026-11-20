@@ -20,6 +20,7 @@ V18,O4,AI Act classification vignettes (13 archetypes incl. Annex III 5(b)/5(c)/
 V19,O4,"Residual <= inherent and inherent within [1, 25] for all use-case x category cells",PASS,143 cells,,
 V20,O4,Monotonicity (500 random profiles): more controls never raise residual; riskier attributes never lower inherent,PASS,"violations: controls 0, attributes 0",,
 V21,O4,Benchmark: employment-weighted share of AI use classified high-risk vs CSSF/BCL self-assessment (5%),PASS,6.6%,2%-12% (5% +/- survey uncertainty incl. 29% unclassified),
-V22,O4,"Expert review of taxonomy, weights and control coverage (validation workshop)",PENDING,review form and Fleiss-kappa scorer ready (docs/workshop),kappa >= 0.40 and all critical comments resolved,Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv
-V23,O5,Determinism: identical results when re-run with the same seed,PASS,ae87c899594822ee / ae87c899594822ee,,
-V24,O5,Employment covered by integrated sub-sectors (CSSF/CAA-registered entities),INFO,"57,229 employees in 8 sub-sectors",,"LFF 2024 total of 73,272 also includes legal/audit/consulting (~28%), holdings and other financial services"
+V22,O4,Internal review by the project leader (review form A1-C2),INFO,8 items logged; 8 no change requested,,docs/workshop/internal_review_2026-11-20.md; does not replace the external expert workshop
+V23,O4,"Expert review of taxonomy, weights and control coverage (validation workshop)",PENDING,review form and Fleiss-kappa scorer ready (docs/workshop),kappa >= 0.40 and all critical comments resolved,Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv
+V24,O5,Determinism: identical results when re-run with the same seed,PASS,ae87c899594822ee / ae87c899594822ee,,
+V25,O5,Employment covered by integrated sub-sectors (CSSF/CAA-registered entities),INFO,"57,229 employees in 8 sub-sectors",,"LFF 2024 total of 73,272 also includes legal/audit/consulting (~28%), holdings and other financial services"
