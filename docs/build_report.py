@@ -21,7 +21,7 @@ from reportlab.platypus import (Image as RLImage, KeepTogether, PageBreak, Parag
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs"
-DST = ROOT / "docs" / "LuxFin-AI_M3_Results_and_Validation_Report.pdf"
+DST = ROOT / "docs" / "GEKKO-AI_M3_Results_and_Validation_Report.pdf"
 
 GOLD = colors.HexColor("#9c8660")
 INK = colors.HexColor("#252424")
@@ -140,17 +140,16 @@ def cover(c, doc):
                               "Impacts, Opportunities and Risks"]):
         c.drawCentredString(W / 2, y - 14 * mm - i * 8.5 * mm, line)
     c.setFillColor(GOLD); c.setFont("Helvetica", 10.5)
-    c.drawCentredString(W / 2, y - 48 * mm, "LUXFIN-AI OBSERVATORY  —  PROTOTYPE TOOLKIT v" + man["toolkit_version"])
+    c.drawCentredString(W / 2, y - 48 * mm, "PROTOTYPE TOOLKIT v" + man["toolkit_version"])
     c.setFillColor(INK); c.setFont("Helvetica-Bold", 12)
-    c.drawCentredString(W / 2, y - 62 * mm, "Milestone M3 — Integrated prototype: results and validation report")
+    c.drawCentredString(W / 2, y - 62 * mm, "Milestone M3  Integrated prototype: results and validation report")
     c.setFont("Helvetica", 9.5); c.setFillColor(GREY)
-    c.drawCentredString(W / 2, y - 69 * mm, "Objectives O3–O5  ·  Deliverables D4.1, D4.2, D5.1")
+    c.drawCentredString(W / 2, y - 69 * mm, "Objectives O3-O5  ·  Deliverables D4.1, D4.2, D5.1")
     c.line(40 * mm, 52 * mm, W - 40 * mm, 52 * mm)
     c.setFont("Helvetica", 8.3)
     lines = ["Gekko & Co. Capital SCSp  ·  RCS B311757  ·  54, Rue du Parc, L-3542 Dudelange, Luxembourg",
-             "General Partner and Manager: RM MANAGEMENT SPF (RCS E9003)",
-             "RDI-REDDEX experimental development  ·  Project period 12/10/2026 – 30/11/2026",
-             "Version 0.9 (pre-workshop)  ·  20 November 2026"]
+             "RDI-REDDEX experimental development  ·  Project period 12/10/2026 - 30/11/2026",
+             "Version 0.9 - 20 November 2026"]
     for i, l in enumerate(lines):
         c.drawCentredString(W / 2, 44 * mm - i * 5 * mm, l)
     c.restoreState()
@@ -167,7 +166,7 @@ def later(c, doc):
     from reportlab.pdfbase.pdfmetrics import stringWidth
     c.drawString(18 * mm + stringWidth("GEKKO & CO", "Times-Bold", 8.5) + 5, Hh - 12 * mm, "CAPITAL SCSp")
     c.setFillColor(GREY)
-    c.drawRightString(W - 18 * mm, Hh - 12 * mm, "LuxFin-AI Observatory · M3 results and validation report")
+    c.drawRightString(W - 18 * mm, Hh - 12 * mm, "GEKKO-AI Observatory · M3 results and validation report")
     c.line(18 * mm, 13 * mm, W - 18 * mm, 13 * mm)
     c.drawString(18 * mm, 9 * mm, "Scenario results are relative to a no-AI counterfactual and are not forecasts.")
     c.drawRightString(W - 18 * mm, 9 * mm, f"{doc.page}")

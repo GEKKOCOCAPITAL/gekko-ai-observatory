@@ -48,5 +48,5 @@ Code: Apache-2.0. Data compiled from public sources; see each source's terms. Da
 where source rights permit. "LuxFin-AI Observatory" name retained by the applicant.
 
 ## Written report
-`docs/LuxFin-AI_M3_Results_and_Validation_Report.pdf` — M3 results and validation report (rebuild with
+`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf` — M3 results and validation report (rebuild with
 `make test && python docs/build_report.py` after `luxfin run`). Validation workshop materials: `docs/workshop/`.
