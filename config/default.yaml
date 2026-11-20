@@ -1,0 +1,58 @@
+# LuxFin-AI Observatory - default run configuration
+run:
+  base_year: 2025          # last year with observed adoption (survey Jun-Aug 2024, rolled to end-2025)
+  horizon: 2030
+  n_draws: 10000           # Monte-Carlo draws per scenario
+  seed: 20261130
+  quantiles: [0.05, 0.50, 0.95]
+
+data:
+  subsectors: data/subsectors.csv
+  tasks: data/tasks.csv
+  adoption_signals: null    # optional CSV from the WP3 NLP pipeline (columns: subsector, year, adoption_share, n_docs)
+  risk_taxonomy: data/risk_taxonomy.yaml
+  use_cases: data/use_cases.csv
+  use_case_mix: data/use_case_mix.csv
+
+# Adoption diffusion calibration (logistic). Observed: share of credit institutions,
+# payment and e-money institutions with AI use: 30% (survey Oct 2021-Jan 2022)
+# -> 43% (survey Jun-Aug 2024). CSSF/BCL thematic reviews 2023 and 2025.
+calibration:
+  adoption_obs:
+    - {date: 2021.95, share: 0.30}
+    - {date: 2024.55, share: 0.43}
+  ceiling_central: 0.90
+
+# Common macro parameters (triangular: [min, mode, max])
+common:
+  exposure_rating_noise_sd: 0.10     # multiplicative noise on task exposure index (rating uncertainty)
+  adoption_baseline_noise: [0.75, 1.0, 1.30]   # survey entity share -> workforce share uncertainty
+  proxy_extra_noise: [0.70, 1.0, 1.40]          # extra uncertainty where adoption is a proxy
+  labour_share_va: [0.40, 0.50, 0.60]           # compensation of employees / GVA (assumption)
+  price_pass_through: [0.30, 0.55, 0.80]        # share of unit-cost saving passed to prices (assumption)
+  demand_elasticity: [0.30, 0.70, 1.20]         # price elasticity of demand for LU financial services (assumption)
+
+scenarios:
+  cautious:
+    label: "S1 Cautious (Acemoglu-type lower bound)"
+    ceiling: [0.55, 0.65, 0.75]
+    speed_multiplier: [0.50, 0.70, 0.90]
+    depth_2030: [0.15, 0.25, 0.35]        # share of exposed tasks actually performed with AI in adopting firms
+    time_saving: [0.10, 0.14, 0.20]       # time saved on AI-performed exposed tasks (Brynjolfsson et al. 2025: ~14%)
+    reinstatement: [0.05, 0.15, 0.25]     # share of saved hours re-deployed to new tasks
+  central:
+    label: "S2 Central (calibrated diffusion)"
+    ceiling: [0.80, 0.90, 0.97]
+    speed_multiplier: [0.75, 1.00, 1.25]
+    depth_2030: [0.30, 0.45, 0.60]
+    time_saving: [0.14, 0.25, 0.40]       # 14% (Brynjolfsson et al. 2025) to 40% (Noy & Zhang 2023)
+    reinstatement: [0.10, 0.25, 0.40]
+  accelerated:
+    label: "S3 Accelerated (agentic GenAI)"
+    ceiling: [0.90, 0.95, 1.00]
+    speed_multiplier: [1.10, 1.50, 2.00]
+    depth_2030: [0.50, 0.65, 0.80]
+    time_saving: [0.25, 0.35, 0.50]
+    reinstatement: [0.10, 0.20, 0.35]
+
+depth_base: 0.10   # depth of use within adopting entities in base year (54% of use cases in production, 92% internal)

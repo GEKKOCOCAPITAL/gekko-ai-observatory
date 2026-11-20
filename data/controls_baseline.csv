@@ -1,0 +1,11 @@
+control,coverage,status,source
+human_oversight,0.90,official,CSSF/BCL thematic review 2025: 90% of use cases have a human in the loop
+explainability,0.54,official,CSSF/BCL thematic review 2025: explainability rated good or very good for 54% of use cases
+performance_monitoring,0.56,official,CSSF/BCL thematic review 2025: model performance actively monitored for 56% of use cases
+logging_documentation,0.56,official,CSSF/BCL thematic review 2025: auditability rated good or very good for 56% of use cases
+bias_testing,0.45,official,CSSF/BCL thematic review 2025: 45% of applicable use cases implement bias measures
+vendor_exit_plan,0.40,assumption,No survey figure; DORA register of information in force since Jan 2025 - to be validated at workshop
+incident_management,0.60,assumption,No survey figure; DORA incident regime in force - to be validated at workshop
+ai_literacy,0.50,assumption,No survey figure; AI Act Art. 4 applies since 2 Feb 2025 - to be validated at workshop
+red_teaming,0.20,assumption,No survey figure - to be validated at workshop
+data_governance,0.55,assumption,No survey figure - to be validated at workshop

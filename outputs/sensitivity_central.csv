@@ -1,0 +1,21 @@
+parameter,spearman_rho,target
+time_saving,-0.6708224105642241,employment 2030
+depth_2030,-0.4401902062419021,employment 2030
+reinstatement,0.3594959815509598,employment 2030
+demand_elasticity,0.2836284254322842,employment 2030
+price_pass_through,0.21805179461651794,employment 2030
+exposure_noise(emp-weighted),-0.1532362300403623,employment 2030
+adoption_baseline(emp-weighted),-0.09805139457251395,employment 2030
+speed_multiplier,-0.09331250621712506,employment 2030
+labour_share_va,0.09289710631697107,employment 2030
+ceiling,-0.060942341145423407,employment 2030
+time_saving,0.6117889421378894,real GVA 2030
+depth_2030,0.41138658354986585,real GVA 2030
+reinstatement,0.4066541937945419,real GVA 2030
+demand_elasticity,0.3391385777353858,real GVA 2030
+price_pass_through,0.23788282073082823,real GVA 2030
+exposure_noise(emp-weighted),0.1343097177230972,real GVA 2030
+speed_multiplier,0.12004143369641433,real GVA 2030
+labour_share_va,0.11086011650860117,real GVA 2030
+adoption_baseline(emp-weighted),0.09305165226651653,real GVA 2030
+ceiling,0.0623566305115663,real GVA 2030

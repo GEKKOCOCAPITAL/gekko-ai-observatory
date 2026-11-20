@@ -1,0 +1,16 @@
+id,source,used_for,url
+S1,CSSF - Financial centre: main updated figures (monthly releases Jun-Sep 2026),Employment by entity type,https://www.cssf.lu/en/statistics/
+S2,Luxembourg for Finance - State of the Financial Sector 2025,Sector employment (73272 in 2024); inferred GVA EUR 17.3bn; banking ~43% and fund management ~22% of GVA; EUR 236400 GVA per employee,https://lff.foleon.com/brochures/state-of-the-financial-sector-2025/
+S3,BCL/CSSF - Thematic review on the use of AI in the Luxembourg financial sector (May 2025; survey Jun-Aug 2024; 461 respondents),Adoption by entity type; diffusion calibration; control coverage; AI Act self-classification (5% high-risk),https://www.cssf.lu/en/2025/05/second-thematic-review-on-the-use-of-artificial-intelligence-in-the-luxembourg-financial-sector/
+S4,BCL/CSSF - Thematic review on the use of AI (May 2023; survey Oct 2021-Jan 2022),Diffusion calibration (30% adoption among banks/PI/EMI),https://www.cssf.lu/en/2023/05/thematic-review-on-the-use-of-artificial-intelligence-in-the-luxembourg-financial-sector/
+S5,Insurance Europe via Statista - employees in insurance companies in Luxembourg (2020),Insurance employment (dated),https://www.statista.com/statistics/441388/insurance-sector-number-of-workers-luxembourg/
+S6,Paperjam - Insurance in Luxembourg: fewer brokers higher premiums (2026),Broker employment 2025,https://en.paperjam.lu/article/insurance-in-luxembourg-fewer-brokers-higher-premiums
+S7,Eloundou Manning Mishkin & Rock (2024) GPTs are GPTs Science 384(6702),E0/E1/E2 exposure rubric; beta = E1 + 0.5 E2,https://doi.org/10.1126/science.adj0998
+S8,Brynjolfsson Li & Raymond (2025) Generative AI at Work QJE 140(2),Lower time-saving parameter (~14%),https://doi.org/10.1093/qje/qjae044
+S9,Noy & Zhang (2023) Experimental evidence on the productivity effects of generative AI Science 381(6654),Upper time-saving parameter (~40%),https://doi.org/10.1126/science.adh2586
+S10,Acemoglu (2024) The Simple Macroeconomics of AI NBER WP 32487,Cautious scenario design and lower-bound benchmark,https://www.nber.org/papers/w32487
+S11,Cazzaniga et al. (2024) Gen-AI: Artificial Intelligence and the Future of Work IMF SDN/2024/001,Complementarity vs substitution framing (reinstatement parameter),https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379
+S12,Financial Stability Board (2024) The Financial Stability Implications of Artificial Intelligence (14 Nov 2024),Risk taxonomy - FSB vulnerabilities,https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/
+S13,Regulation (EU) 2024/1689 (AI Act) as amended by the Digital Omnibus on AI (in force 27 Jul 2026),Risk taxonomy; Annex III high-risk obligations from 2 Dec 2027,https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+S14,Regulation (EU) 2022/2554 (DORA),Risk taxonomy - ICT and third-party risk,https://eur-lex.europa.eu/eli/reg/2022/2554/oj
+S15,ILO Working Paper 140 (2025) Generative AI and Jobs: A Refined Global Index of Occupational Exposure,Benchmark - clerical occupations most exposed,https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure

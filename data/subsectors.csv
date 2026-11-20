@@ -1,0 +1,9 @@
+code,name,employment,employment_ref_date,employment_source,employment_status,gva_eur_m,gva_basis,cssf_survey_group,baseline_emp_growth,baseline_gva_growth,adoption_2024,adoption_status
+BANK,Credit institutions,26575,2026-06-30,CSSF Financial centre (Sep 2026),official,7439,LFF 2024 inferred GVA x 43% banking share,B,0.005,0.015,0.38,official
+IFM,Authorised investment fund managers,7745,2026-06-30,CSSF Financial centre (Sep 2026),official,3806,LFF 2024 inferred GVA x 22% fund-management share (wider NACE scope),IFM,0.020,0.025,0.24,official
+IF,Investment firms,1756,2026-03-31,CSSF Financial centre (Jun/Aug 2026),official,415,employment x EUR 236.4k sector GVA per employee (LFF 2024),IF,0.010,0.015,0.15,official
+SPFS,Specialised PFS (fund admin / registrar / domiciliation),7295,2026-03-31,CSSF Financial centre (Jun/Aug 2026),official,1724,employment x EUR 236.4k sector GVA per employee (LFF 2024),proxy:mean(B;IFM),0.010,0.020,0.31,proxy
+SUPFS,Support PFS (ICT and outsourcing for the financial sector),8000,2026-03-31,CSSF Financial centre (Jun/Aug 2026),official,1891,employment x EUR 236.4k sector GVA per employee (LFF 2024),proxy:B,0.005,0.015,0.38,proxy
+PIEMI,Payment and e-money institutions,919,2026-06-30,CSSF Financial centre (Aug 2026),official,217,employment x EUR 236.4k sector GVA per employee (LFF 2024),PI/EMI,0.030,0.040,0.63,official
+INS,Insurance and reinsurance undertakings,4090,2020-12-31,Insurance Europe via Statista (dated; replace with CAA/STATEC),dated,967,employment x EUR 236.4k sector GVA per employee (LFF 2024),proxy:B,0.010,0.020,0.38,proxy
+BRK,Insurance brokers,849,2025-12-31,CAA figures reported by Paperjam (2026),official,201,employment x EUR 236.4k sector GVA per employee (LFF 2024),proxy:IF,0.020,0.030,0.15,proxy

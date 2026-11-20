@@ -1,0 +1,89 @@
+subsector,category_id,category,residual,inherent
+BANK,R01,Model risk and output reliability,3.002459328,6.2944640000000005
+BANK,R02,"Data quality, privacy and governance",6.7976972799999995,10.72192
+BANK,R03,Third-party dependency and concentration,6.99432448,9.935120000000001
+BANK,R04,Cyber and adversarial attacks,6.7867068160000015,9.572224
+BANK,R05,Market correlation and herding,2.740227168,4.499552
+BANK,R06,"Governance, accountability and human oversight",4.30259616,7.6017600000000005
+BANK,R07,Explainability and transparency,3.6316888959999996,6.229312
+BANK,R08,Fairness and consumer protection,3.5237914559999997,6.0132959999999995
+BANK,R09,Regulatory classification and compliance,4.434706912,6.648736
+BANK,R10,Operational resilience and continuity,5.7252384,9.087679999999999
+BANK,R11,"AI-enabled fraud, deception and misuse",6.037092,8.943840000000002
+BRK,R01,Model risk and output reliability,3.06044154,6.4160200000000005
+BRK,R02,"Data quality, privacy and governance",6.374743199999999,10.0548
+BRK,R03,Third-party dependency and concentration,7.266688,10.322000000000001
+BRK,R04,Cyber and adversarial attacks,7.206843200000001,10.1648
+BRK,R05,Market correlation and herding,1.99174668,3.2705200000000003
+BRK,R06,"Governance, accountability and human oversight",4.264753400000001,7.5349
+BRK,R07,Explainability and transparency,3.7323426799999995,6.40196
+BRK,R08,Fairness and consumer protection,2.35397372,4.01702
+BRK,R09,Regulatory classification and compliance,3.7735658400000003,5.65752
+BRK,R10,Operational resilience and continuity,5.7697416,9.15832
+BRK,R11,"AI-enabled fraud, deception and misuse",6.00912,8.9024
+IF,R01,Model risk and output reliability,3.3164798760000003,6.952788
+IF,R02,"Data quality, privacy and governance",5.562817439999999,8.77416
+IF,R03,Third-party dependency and concentration,7.11577856,10.10764
+IF,R04,Cyber and adversarial attacks,6.520780768000001,9.197152
+IF,R05,Market correlation and herding,4.060285824,6.667135999999999
+IF,R06,"Governance, accountability and human oversight",4.124442,7.287
+IF,R07,Explainability and transparency,3.2248201919999997,5.5314239999999995
+IF,R08,Fairness and consumer protection,2.217707624,3.784484
+IF,R09,Regulatory classification and compliance,3.4163740000000002,5.122
+IF,R10,Operational resilience and continuity,5.70569328,9.056656
+IF,R11,"AI-enabled fraud, deception and misuse",5.087988,7.5377600000000005
+IFM,R01,Model risk and output reliability,3.18193344,6.67072
+IFM,R02,"Data quality, privacy and governance",5.766508959999999,9.09544
+IFM,R03,Third-party dependency and concentration,7.11566592,10.107479999999999
+IFM,R04,Cyber and adversarial attacks,6.669409856000001,9.406784
+IFM,R05,Market correlation and herding,3.2789972880000002,5.384232
+IFM,R06,"Governance, accountability and human oversight",4.07947896,7.20756
+IFM,R07,Explainability and transparency,3.2215180799999996,5.52576
+IFM,R08,Fairness and consumer protection,2.257431392,3.8522719999999997
+IFM,R09,Regulatory classification and compliance,3.4346231200000004,5.14936
+IFM,R10,Operational resilience and continuity,5.60419776,8.895551999999999
+IFM,R11,"AI-enabled fraud, deception and misuse",5.073624000000001,7.51648
+INS,R01,Model risk and output reliability,3.050407368,6.394984000000001
+INS,R02,"Data quality, privacy and governance",6.952646879999999,10.96632
+INS,R03,Third-party dependency and concentration,7.0729472,10.046800000000001
+INS,R04,Cyber and adversarial attacks,7.121207344000001,10.044016000000001
+INS,R05,Market correlation and herding,2.440657632,4.0076480000000005
+INS,R06,"Governance, accountability and human oversight",4.351464600000001,7.6881
+INS,R07,Explainability and transparency,3.8102034959999997,6.535512
+INS,R08,Fairness and consumer protection,3.6303825119999997,6.195192
+INS,R09,Regulatory classification and compliance,4.698822904,7.044712
+INS,R10,Operational resilience and continuity,5.750115839999999,9.127168
+INS,R11,"AI-enabled fraud, deception and misuse",6.340885200000001,9.393904000000001
+PIEMI,R01,Model risk and output reliability,2.959701048,6.204824
+PIEMI,R02,"Data quality, privacy and governance",7.496466719999999,11.82408
+PIEMI,R03,Third-party dependency and concentration,7.18310912,10.20328
+PIEMI,R04,Cyber and adversarial attacks,6.854861568000001,9.668351999999999
+PIEMI,R05,Market correlation and herding,2.257606848,3.707072
+PIEMI,R06,"Governance, accountability and human oversight",4.618967520000001,8.160720000000001
+PIEMI,R07,Explainability and transparency,3.8167097759999997,6.546672
+PIEMI,R08,Fairness and consumer protection,4.035498376,6.886515999999999
+PIEMI,R09,Regulatory classification and compliance,4.6573194959999995,6.982488
+PIEMI,R10,Operational resilience and continuity,6.01520976,9.547951999999999
+PIEMI,R11,"AI-enabled fraud, deception and misuse",6.380834400000001,9.453088000000001
+SPFS,R01,Model risk and output reliability,3.0058307639999997,6.301532
+SPFS,R02,"Data quality, privacy and governance",6.704017439999999,10.57416
+SPFS,R03,Third-party dependency and concentration,7.13396992,10.13348
+SPFS,R04,Cyber and adversarial attacks,6.971886272000002,9.833408
+SPFS,R05,Market correlation and herding,2.123300424,3.486536
+SPFS,R06,"Governance, accountability and human oversight",4.248882760000001,7.5068600000000005
+SPFS,R07,Explainability and transparency,3.262593928,5.596215999999999
+SPFS,R08,Fairness and consumer protection,2.8406818799999995,4.84758
+SPFS,R09,Regulatory classification and compliance,3.7321318,5.5954
+SPFS,R10,Operational resilience and continuity,5.64475968,8.959935999999999
+SPFS,R11,"AI-enabled fraud, deception and misuse",5.3011368,7.853536
+SUPFS,R01,Model risk and output reliability,3.163517424,6.632112000000001
+SUPFS,R02,"Data quality, privacy and governance",5.8558775999999995,9.2364
+SUPFS,R03,Third-party dependency and concentration,7.826987519999999,11.11788
+SUPFS,R04,Cyber and adversarial attacks,7.26140784,10.24176
+SUPFS,R05,Market correlation and herding,2.1910407120000004,3.5977680000000003
+SUPFS,R06,"Governance, accountability and human oversight",4.429980120000001,7.8268200000000006
+SUPFS,R07,Explainability and transparency,3.362916568,5.768295999999999
+SUPFS,R08,Fairness and consumer protection,2.226724992,3.7998719999999997
+SUPFS,R09,Regulatory classification and compliance,3.4451083600000003,5.16508
+SUPFS,R10,Operational resilience and continuity,6.0802862399999995,9.651247999999999
+SUPFS,R11,"AI-enabled fraud, deception and misuse",5.094792,7.547840000000001

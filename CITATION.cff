@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this toolkit, please cite it as below."
+title: "LuxFin-AI Observatory: AI exposure, adoption, impact scenarios and risk scoring for Luxembourg's financial sector"
+version: 0.9.0
+date-released: 2026-11-20
+license: Apache-2.0
+authors:
+  - name: "Gekko & Co. Capital SCSp"
+    address: "54, Rue du Parc"
+    city: Dudelange
+    country: LU
+keywords: [artificial intelligence, financial sector, Luxembourg, labour market, AI Act, DORA, risk taxonomy, Monte Carlo]
+abstract: >-
+  Open, reproducible prototype linking task-level AI exposure, adoption, Monte-Carlo impact scenarios to 2030
+  (productivity, employment, value added) and an AI risk taxonomy aligned with the EU AI Act, DORA and FSB
+  vulnerabilities, for Luxembourg's financial sector.

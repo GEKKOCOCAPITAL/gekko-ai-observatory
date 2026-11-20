@@ -1,0 +1,7 @@
+name: Client-facing GenAI assistant for unit-linked life policyholders
+attributes: {genai: 1, client_facing: 1, autonomy: 0.5, decisions_on_persons: 0.2, vendor_dependence: 0.9, data_sensitivity: 0.8, materiality: 0.5, market_activity: 0}
+controls: {red_teaming: 0.5, vendor_exit_plan: 0.3}
+annex_iii: ""
+interacts_with_persons: 1
+generates_public_content: 0
+fraud_detection: 0

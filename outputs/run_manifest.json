@@ -1,0 +1,26 @@
+{
+ "toolkit_version": "0.9.0",
+ "run_utc": "2026-11-20T13:57:08+00:00",
+ "python": "3.13.18",
+ "numpy": "2.5.3",
+ "pandas": "3.0.5",
+ "seed": 20261130,
+ "n_draws": 10000,
+ "runtime_s": 3.0,
+ "inputs": {
+  "config/default.yaml": "be78aaa51718bd505698d091d7ecd0e6c5c71e6789093375686634b8861e9141",
+  "data/subsectors.csv": "8c3233186e718b73fffdef72c1ff73b0d5283fb73dc579b2563f8bed04ec15e1",
+  "data/tasks.csv": "fd3d5e7cf938472c2b18572e680cf9891696d01a3418105449ed215938d59da8",
+  "data/risk_taxonomy.yaml": "92e13a60ec5841b54cd9d3412c0445eecdedd339c1571622816afbc442d8322c",
+  "data/use_cases.csv": "51519715656c2103f843c9b7397b2fcd812f6ba70eea3198570e9210d0343ac2",
+  "data/use_case_mix.csv": "b9d9a05958fddab94597bf9c1b7d31f9cea20a0962a21f357aa0ca51c7596a72",
+  "data/controls_baseline.csv": "905fac4e6038a4d5d6d8be971bcbf0355617aba6d1d4c3f622aa18ee28515a69",
+  "data/sources.csv": "d2fdcad10e451078b5b1869f28a0e87ad4b0d804198b7552e1387204e83230f1"
+ },
+ "results_hash_central": "ae87c899594822ee",
+ "validation_summary": {
+  "PASS": 22,
+  "PENDING": 1,
+  "INFO": 1
+ }
+}

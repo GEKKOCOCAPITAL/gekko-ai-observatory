@@ -1,0 +1,55 @@
+subsector,task_id,task,isco08,time_share,rating,rating_label,rationale
+BANK,B01,Client onboarding and KYC document review,3312,0.10,1.0,E1,Document extraction and summarisation directly within LLM capabilities
+BANK,B02,AML transaction-alert investigation and narrative writing,2413,0.10,0.5,E2,Needs case-management data access plus LLM drafting
+BANK,B03,Regulatory and prudential reporting preparation,2411,0.10,0.5,E2,Data aggregation tooling required; LLM assists commentary and checks
+BANK,B04,Private-banking client advice and relationship meetings,2412,0.15,0.0,E0,Trust-based interpersonal interaction; physical presence
+BANK,B05,Credit analysis and loan file preparation,2413,0.08,0.5,E2,Financial spreading needs tools; memo drafting directly exposed
+BANK,B06,Payments operations and reconciliations,4311,0.10,0.5,E2,Rule-based processing with exception handling via tools
+BANK,B07,Client correspondence and service requests,4222,0.10,1.0,E1,Drafting and classifying written requests
+BANK,B08,IT development and maintenance,2512,0.10,0.5,E2,Code assistants with repository and test tooling
+BANK,B09,Management supervision and internal control sign-off,1211,0.07,0.0,E0,Accountability and judgement cannot be delegated
+BANK,B10,Treasury and markets execution,3311,0.10,0.0,E0,Already automated by non-LLM systems; residual judgement
+IFM,M01,Fund prospectus KIID and regulatory document drafting,2619,0.12,1.0,E1,Long-form regulated text drafting and review
+IFM,M02,Portfolio research and investment memos,2413,0.15,0.5,E2,Requires market data tools; synthesis directly exposed
+IFM,M03,Risk monitoring and investment compliance checks,2413,0.15,0.5,E2,Limit-check tooling plus LLM interpretation
+IFM,M04,Distribution support and investor reporting,2431,0.12,1.0,E1,Templated commentary and report generation
+IFM,M05,Oversight of delegates and due diligence questionnaires,2411,0.12,1.0,E1,Questionnaire review and summarisation
+IFM,M06,Portfolio management decisions,2413,0.14,0.0,E0,Fiduciary judgement and accountability
+IFM,M07,Conducting officer and board governance,1211,0.10,0.0,E0,Legal responsibility of conducting officers
+IFM,M08,Data management and IT operations,2511,0.10,0.5,E2,Tool-dependent automation
+IF,F01,Client suitability and appropriateness documentation,3312,0.15,1.0,E1,Structured questionnaires and written assessments
+IF,F02,Investment research and market commentary,2413,0.20,1.0,E1,Text synthesis of public information
+IF,F03,Order handling and execution,3311,0.20,0.0,E0,Execution systems already automated; residual judgement
+IF,F04,Client relationship management,2412,0.20,0.0,E0,Interpersonal advice
+IF,F05,Compliance monitoring and reporting,2411,0.15,0.5,E2,Requires trade data tooling
+IF,F06,Back-office settlement,4311,0.10,0.5,E2,Rule-based with exception tooling
+SPFS,S01,Transfer agency: investor onboarding and KYC,4312,0.18,1.0,E1,High-volume document review
+SPFS,S02,Fund accounting and NAV calculation,3313,0.18,0.5,E2,Accounting systems with LLM-assisted exception explanation
+SPFS,S03,Registrar dealing and investor correspondence,4222,0.14,1.0,E1,Written request handling
+SPFS,S04,Depositary oversight and cash monitoring,2411,0.12,0.5,E2,Requires position data tooling
+SPFS,S05,Corporate domiciliation and company secretarial documents,3343,0.12,1.0,E1,Minutes resolutions and filings drafting
+SPFS,S06,Regulatory reporting for funds,2411,0.10,0.5,E2,Templated reporting with data tooling
+SPFS,S07,Client service management,1211,0.08,0.0,E0,Escalation and relationship accountability
+SPFS,S08,IT and data operations,2511,0.08,0.5,E2,Tool-dependent automation
+SUPFS,P01,Software development and testing,2512,0.30,0.5,E2,Code assistants with tooling
+SUPFS,P02,IT service desk and user support,3512,0.20,1.0,E1,Ticket triage and written resolution
+SUPFS,P03,Infrastructure and network operations,3513,0.20,0.0,E0,Hands-on infrastructure work
+SUPFS,P04,Business process outsourcing (document handling),4311,0.15,1.0,E1,Document classification and extraction
+SUPFS,P05,Project and account management,1330,0.15,0.0,E0,Client accountability
+PIEMI,E01,Merchant and customer onboarding (KYC),3312,0.20,1.0,E1,Document verification and review
+PIEMI,E02,Fraud and AML monitoring,2413,0.20,0.5,E2,ML monitoring systems plus LLM case narratives
+PIEMI,E03,Customer support,4222,0.20,1.0,E1,Chat and email support
+PIEMI,E04,Product and software engineering,2512,0.25,0.5,E2,Code assistants with tooling
+PIEMI,E05,Management and partnerships,1211,0.15,0.0,E0,Commercial negotiation and accountability
+INS,I01,Underwriting and risk selection,3321,0.15,0.5,E2,Pricing models plus LLM file summarisation
+INS,I02,Claims handling and correspondence,3315,0.15,1.0,E1,Claims file reading and letters
+INS,I03,Policy administration (unit-linked life),4312,0.15,1.0,E1,Document and contract administration
+INS,I04,Actuarial modelling and Solvency II reporting,2120,0.12,0.5,E2,Model tooling required
+INS,I05,Compliance and distribution oversight,2411,0.10,0.5,E2,Requires data access
+INS,I06,Client and broker relationship management,3321,0.13,0.0,E0,Interpersonal
+INS,I07,Management and governance,1211,0.10,0.0,E0,Accountability
+INS,I08,IT operations,2511,0.10,0.5,E2,Tool-dependent
+BRK,K01,Client needs analysis and advice,3321,0.30,0.0,E0,Interpersonal advice
+BRK,K02,Policy comparison and proposal preparation,3321,0.25,1.0,E1,Document comparison and drafting
+BRK,K03,Contract administration,4312,0.25,1.0,E1,Administration correspondence
+BRK,K04,Compliance (IDD) documentation,2411,0.20,0.5,E2,Requires records tooling

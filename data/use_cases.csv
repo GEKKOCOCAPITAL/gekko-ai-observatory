@@ -1,0 +1,14 @@
+id,name,genai,client_facing,autonomy,decisions_on_persons,vendor_dependence,data_sensitivity,materiality,market_activity,annex_iii,interacts_with_persons,generates_public_content,fraud_detection,expected_class
+UC01,Internal search and summarisation (RAG assistant),1,0,0.1,0,0.8,0.6,0.3,0,,0,0,0,minimal
+UC02,Document processing in fund administration and transfer agency,1,0,0.3,0.2,0.6,0.8,0.7,0,,0,0,0,minimal
+UC03,Client-facing chatbot or virtual assistant,1,1,0.6,0.2,0.8,0.7,0.5,0,,1,0,0,limited
+UC04,Text content generation (reports and marketing),1,1,0.1,0,0.8,0.3,0.4,0,,0,1,0,limited
+UC05,Translation,1,0,0.2,0,0.8,0.5,0.2,0,,0,0,0,minimal
+UC06,AML/KYC screening and transaction monitoring,0,0,0.2,0.7,0.5,1.0,0.9,0,,0,0,0,minimal
+UC07,Payment fraud detection,0,0,0.6,0.5,0.5,1.0,0.8,0,5b,0,0,1,minimal
+UC08,Creditworthiness assessment of natural persons,0,1,0.3,1.0,0.4,1.0,0.8,0,5b,0,0,0,high
+UC09,Life and health insurance risk assessment and pricing,0,1,0.3,1.0,0.4,1.0,0.8,0,5c,0,0,0,high
+UC10,Investment research and portfolio analytics,1,0,0.2,0,0.7,0.4,0.7,0.8,,0,0,0,minimal
+UC11,Algorithmic trading and execution,0,0,0.9,0,0.4,0.3,0.9,1.0,,0,0,0,minimal
+UC12,Recruitment and HR screening,1,0,0.3,1.0,0.8,0.9,0.4,0,4,0,0,0,high
+UC13,Code generation and IT operations,1,0,0.3,0,0.9,0.4,0.6,0,,0,0,0,minimal

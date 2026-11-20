@@ -1,0 +1,146 @@
+# LuxFin-AI risk taxonomy and scoring grid (O4) - version 0.9 (pre-expert-review)
+# Scores: likelihood L and impact I on 1-5 scales; inherent = L x I (1-25);
+# residual = inherent x (1 - mitigation), mitigation capped at max_mitigation.
+version: "0.9"
+max_mitigation: 0.70
+
+attributes:
+  genai: "Uses generative AI / LLMs (vs. classical ML)"
+  client_facing: "Outputs reach clients or the public directly"
+  autonomy: "Acts without systematic human review (1 - human-in-the-loop)"
+  decisions_on_persons: "Produces or materially supports decisions about natural persons"
+  vendor_dependence: "Relies on third-party models, APIs or cloud (incl. GPAI providers)"
+  data_sensitivity: "Processes personal, confidential or client data"
+  materiality: "Supports a critical or important function / material business impact"
+  market_activity: "Generates trading, pricing or investment signals in markets"
+
+controls:
+  human_oversight: "Effective human-in-the-loop review with authority to override (AI Act Art. 14/26)"
+  explainability: "Documented explanation of outputs, evidence retained"
+  performance_monitoring: "Ongoing accuracy/drift/hallucination monitoring with thresholds"
+  bias_testing: "Bias and fairness testing across relevant groups"
+  vendor_exit_plan: "Third-party due diligence, contractual rights and exit strategy (DORA Art. 28-30)"
+  incident_management: "AI incidents in ICT incident process and reporting (DORA Art. 17-23)"
+  ai_literacy: "Staff AI-literacy training (AI Act Art. 4)"
+  logging_documentation: "Logging, technical documentation, model inventory"
+  red_teaming: "Adversarial testing incl. prompt injection and data poisoning"
+  data_governance: "Data quality, lineage and minimisation controls (AI Act Art. 10, GDPR)"
+
+categories:
+  - id: R01
+    name: Model risk and output reliability
+    description: Inaccurate, unstable or hallucinated outputs; drift; misuse outside validated scope.
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Art. 9 risk management", "Art. 15 accuracy and robustness", "Art. 72 post-market monitoring"]
+    dora: []
+    other: ["EBA GL on loan origination (EBA/GL/2020/06) s.4.3.4", "CSSF/BCL AI thematic review 2025"]
+    likelihood: {genai: 0.45, autonomy: 0.35, market_activity: 0.20}
+    impact: {materiality: 0.45, client_facing: 0.20, decisions_on_persons: 0.20, market_activity: 0.15}
+    controls: {performance_monitoring: 0.30, human_oversight: 0.25, explainability: 0.10, logging_documentation: 0.10, red_teaming: 0.10}
+  - id: R02
+    name: Data quality, privacy and governance
+    description: Poor or unrepresentative training/input data, leakage of personal or confidential data.
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Art. 10 data and data governance"]
+    dora: ["Art. 9 protection and prevention"]
+    other: ["GDPR Art. 5, 25, 32, 35", "Luxembourg Law of 1 August 2018"]
+    likelihood: {data_sensitivity: 0.50, vendor_dependence: 0.30, genai: 0.20}
+    impact: {data_sensitivity: 0.50, decisions_on_persons: 0.25, client_facing: 0.25}
+    controls: {data_governance: 0.40, logging_documentation: 0.10, vendor_exit_plan: 0.10, ai_literacy: 0.10}
+  - id: R03
+    name: Third-party dependency and concentration
+    description: Dependence on a few model, cloud or GPAI providers; lock-in; common points of failure.
+    fsb: [third_party_dependencies_concentration]
+    ai_act: ["Art. 25 value chain responsibilities", "Art. 53-55 GPAI provider obligations"]
+    dora: ["Art. 28-30 ICT third-party risk", "Art. 31-44 oversight of critical ICT third-party providers"]
+    other: ["EBA GL on outsourcing (EBA/GL/2019/02)", "CSSF Circular 22/806 outsourcing"]
+    likelihood: {vendor_dependence: 0.75, genai: 0.25}
+    impact: {materiality: 0.60, client_facing: 0.20, autonomy: 0.20}
+    controls: {vendor_exit_plan: 0.45, incident_management: 0.10, logging_documentation: 0.10}
+  - id: R04
+    name: Cyber and adversarial attacks
+    description: Prompt injection, data poisoning, model extraction, AI-enabled attacks on the institution.
+    fsb: [cyber_risk]
+    ai_act: ["Art. 15(5) resilience against attacks"]
+    dora: ["Art. 6-16 ICT risk management", "Art. 24-27 digital operational resilience testing"]
+    other: ["NIS2 Directive (EU) 2022/2555 where applicable"]
+    likelihood: {genai: 0.35, client_facing: 0.35, vendor_dependence: 0.30}
+    impact: {data_sensitivity: 0.40, materiality: 0.40, autonomy: 0.20}
+    controls: {red_teaming: 0.35, incident_management: 0.20, logging_documentation: 0.10, human_oversight: 0.05}
+  - id: R05
+    name: Market correlation and herding
+    description: Similar models and data across firms amplifying correlated trading or pricing behaviour.
+    fsb: [market_correlations]
+    ai_act: []
+    dora: []
+    other: ["MiFID II Art. 17 algorithmic trading", "ESMA public statement on AI in investment services (30 May 2024)"]
+    likelihood: {market_activity: 0.60, vendor_dependence: 0.25, autonomy: 0.15}
+    impact: {market_activity: 0.60, materiality: 0.40}
+    controls: {human_oversight: 0.25, performance_monitoring: 0.20, explainability: 0.10}
+  - id: R06
+    name: Governance, accountability and human oversight
+    description: Unclear ownership, insufficient board understanding, automation bias, shadow AI.
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Art. 4 AI literacy", "Art. 14 human oversight", "Art. 26 deployer obligations"]
+    dora: ["Art. 5 governance and organisation"]
+    other: ["EBA GL on internal governance (EBA/GL/2021/05)", "CSSF Circular 12/552 as amended"]
+    likelihood: {autonomy: 0.45, genai: 0.30, vendor_dependence: 0.25}
+    impact: {materiality: 0.50, decisions_on_persons: 0.25, client_facing: 0.25}
+    controls: {ai_literacy: 0.25, human_oversight: 0.25, logging_documentation: 0.15}
+  - id: R07
+    name: Explainability and transparency
+    description: Inability to explain outputs to clients, auditors or supervisors; undisclosed AI interaction.
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Art. 13 transparency to deployers", "Art. 50 transparency obligations", "Art. 86 right to explanation"]
+    dora: []
+    other: ["GDPR Art. 13-15, 22"]
+    likelihood: {genai: 0.45, autonomy: 0.30, client_facing: 0.25}
+    impact: {decisions_on_persons: 0.45, client_facing: 0.35, materiality: 0.20}
+    controls: {explainability: 0.45, logging_documentation: 0.15, human_oversight: 0.10}
+  - id: R08
+    name: Fairness and consumer protection
+    description: Discriminatory or unsuitable outcomes for clients (credit, insurance, suitability, HR).
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Annex III 5(b) creditworthiness", "Annex III 5(c) life and health insurance pricing", "Annex III 4 employment", "Art. 27 fundamental-rights impact assessment"]
+    dora: []
+    other: ["Consumer Credit Directive (EU) 2023/2225 Art. 18", "GDPR Art. 22", "MiFID II suitability (Art. 25)", "IDD"]
+    likelihood: {decisions_on_persons: 0.60, autonomy: 0.25, genai: 0.15}
+    impact: {decisions_on_persons: 0.60, client_facing: 0.25, data_sensitivity: 0.15}
+    controls: {bias_testing: 0.40, human_oversight: 0.20, explainability: 0.10}
+  - id: R09
+    name: Regulatory classification and compliance
+    description: Misclassification under the AI Act, missing registration/conformity, misleading AI claims (AI-washing).
+    fsb: [model_risk_data_quality_governance]
+    ai_act: ["Art. 5 prohibited practices", "Art. 6 high-risk classification", "Art. 49 registration", "Digital Omnibus on AI: Annex III obligations from 2 Dec 2027"]
+    dora: []
+    other: ["ESMA public statement on AI in investment services (30 May 2024)", "UCITS/AIFMD marketing rules"]
+    likelihood: {decisions_on_persons: 0.40, client_facing: 0.30, genai: 0.30}
+    impact: {decisions_on_persons: 0.40, materiality: 0.35, client_facing: 0.25}
+    controls: {logging_documentation: 0.30, ai_literacy: 0.15, human_oversight: 0.10}
+  - id: R10
+    name: Operational resilience and continuity
+    description: Disruption of critical processes that depend on AI services; inability to fall back.
+    fsb: [third_party_dependencies_concentration, cyber_risk]
+    ai_act: []
+    dora: ["Art. 11 response and recovery", "Art. 12 backup and restoration", "Art. 17-23 ICT incident management and reporting"]
+    other: ["CSSF Circular 20/750"]
+    likelihood: {vendor_dependence: 0.50, autonomy: 0.30, genai: 0.20}
+    impact: {materiality: 0.70, client_facing: 0.30}
+    controls: {incident_management: 0.30, vendor_exit_plan: 0.25, human_oversight: 0.10}
+  - id: R11
+    name: AI-enabled fraud, deception and misuse
+    description: Deepfakes and synthetic identities against onboarding and payments; misuse of internal tools.
+    fsb: [genai_fraud_disinformation]
+    ai_act: ["Art. 50(4) deep-fake disclosure"]
+    dora: ["Art. 17-23 incident management"]
+    other: ["PSD2 strong customer authentication", "AMLD/AMLR customer due diligence"]
+    likelihood: {client_facing: 0.45, data_sensitivity: 0.30, genai: 0.25}
+    impact: {client_facing: 0.40, data_sensitivity: 0.30, materiality: 0.30}
+    controls: {red_teaming: 0.20, incident_management: 0.20, ai_literacy: 0.15, human_oversight: 0.10}
+
+fsb_vulnerabilities:
+  third_party_dependencies_concentration: "Third-party dependencies and service provider concentration"
+  market_correlations: "Market correlations"
+  cyber_risk: "Cyber risks"
+  model_risk_data_quality_governance: "Model risk, data quality and governance"
+  genai_fraud_disinformation: "GenAI-related fraud and disinformation"

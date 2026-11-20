@@ -1,0 +1,144 @@
+use_case_id,use_case,category_id,category,likelihood,impact,inherent,mitigation,residual,ai_act_class
+UC01,Internal search and summarisation (RAG assistant),R01,Model risk and output reliability,2.94,1.54,4.5276,0.523,2.1596651999999996,minimal
+UC01,Internal search and summarisation (RAG assistant),R02,"Data quality, privacy and governance",3.96,2.2,8.712,0.36600000000000005,5.523407999999999,minimal
+UC01,Internal search and summarisation (RAG assistant),R03,Third-party dependency and concentration,4.4,1.8,7.920000000000001,0.29600000000000004,5.57568,minimal
+UC01,Internal search and summarisation (RAG assistant),R04,Cyber and adversarial attacks,3.36,2.52,8.4672,0.291,6.003244800000001,minimal
+UC01,Internal search and summarisation (RAG assistant),R05,Market correlation and herding,1.86,1.48,2.7528,0.391,1.6764552000000001,minimal
+UC01,Internal search and summarisation (RAG assistant),R06,"Governance, accountability and human oversight",3.18,1.6,5.088000000000001,0.434,2.879808000000001,minimal
+UC01,Internal search and summarisation (RAG assistant),R07,Explainability and transparency,2.92,1.24,3.6208,0.41700000000000004,2.1109264,minimal
+UC01,Internal search and summarisation (RAG assistant),R08,Fairness and consumer protection,1.7,1.3599999999999999,2.312,0.41400000000000003,1.3548319999999998,minimal
+UC01,Internal search and summarisation (RAG assistant),R09,Regulatory classification and compliance,2.2,1.42,3.124,0.333,2.083708,minimal
+UC01,Internal search and summarisation (RAG assistant),R10,Operational resilience and continuity,3.52,1.8399999999999999,6.4768,0.37,4.080384,minimal
+UC01,Internal search and summarisation (RAG assistant),R11,"AI-enabled fraud, deception and misuse",2.7199999999999998,2.08,5.6575999999999995,0.325,3.81888,minimal
+UC02,Document processing in fund administration and transfer agency,R01,Model risk and output reliability,3.22,2.42,7.792400000000001,0.523,3.7169748,minimal
+UC02,Document processing in fund administration and transfer agency,R02,"Data quality, privacy and governance",4.12,2.8,11.536,0.36600000000000005,7.3138239999999985,minimal
+UC02,Document processing in fund administration and transfer agency,R03,Third-party dependency and concentration,3.8,2.92,11.096,0.29600000000000004,7.811584,minimal
+UC02,Document processing in fund administration and transfer agency,R04,Cyber and adversarial attacks,3.12,3.64,11.356800000000002,0.291,8.051971200000002,minimal
+UC02,Document processing in fund administration and transfer agency,R05,Market correlation and herding,1.78,2.12,3.7736,0.391,2.2981224,minimal
+UC02,Document processing in fund administration and transfer agency,R06,"Governance, accountability and human oversight",3.34,2.5999999999999996,8.684,0.434,4.915144,minimal
+UC02,Document processing in fund administration and transfer agency,R07,Explainability and transparency,3.16,1.92,6.0672,0.41700000000000004,3.5371775999999997,minimal
+UC02,Document processing in fund administration and transfer agency,R08,Fairness and consumer protection,2.38,1.96,4.6648,0.41400000000000003,2.7335727999999997,minimal
+UC02,Document processing in fund administration and transfer agency,R09,Regulatory classification and compliance,2.52,2.3,5.795999999999999,0.333,3.865932,minimal
+UC02,Document processing in fund administration and transfer agency,R10,Operational resilience and continuity,3.36,2.96,9.945599999999999,0.37,6.265727999999999,minimal
+UC02,Document processing in fund administration and transfer agency,R11,"AI-enabled fraud, deception and misuse",2.96,2.8,8.288,0.325,5.5944,minimal
+UC03,Client-facing chatbot or virtual assistant,R01,Model risk and output reliability,3.64,2.8600000000000003,10.410400000000001,0.523,4.9657608,limited
+UC03,Client-facing chatbot or virtual assistant,R02,"Data quality, privacy and governance",4.16,3.6,14.976,0.36600000000000005,9.494784,limited
+UC03,Client-facing chatbot or virtual assistant,R03,Third-party dependency and concentration,4.4,3.48,15.312000000000001,0.29600000000000004,10.779648,limited
+UC03,Client-facing chatbot or virtual assistant,R04,Cyber and adversarial attacks,4.76,3.4,16.183999999999997,0.291,11.474456,limited
+UC03,Client-facing chatbot or virtual assistant,R05,Market correlation and herding,2.16,1.8,3.8880000000000003,0.391,2.367792,limited
+UC03,Client-facing chatbot or virtual assistant,R06,"Governance, accountability and human oversight",4.08,3.2,13.056000000000001,0.434,7.389696000000002,limited
+UC03,Client-facing chatbot or virtual assistant,R07,Explainability and transparency,4.52,3.16,14.283199999999999,0.41700000000000004,8.3271056,limited
+UC03,Client-facing chatbot or virtual assistant,R08,Fairness and consumer protection,2.6799999999999997,2.9,7.771999999999999,0.41400000000000003,4.554391999999999,limited
+UC03,Client-facing chatbot or virtual assistant,R09,Regulatory classification and compliance,3.7199999999999998,3.02,11.234399999999999,0.333,7.4933448,limited
+UC03,Client-facing chatbot or virtual assistant,R10,Operational resilience and continuity,4.12,3.5999999999999996,14.831999999999999,0.37,9.344159999999999,limited
+UC03,Client-facing chatbot or virtual assistant,R11,"AI-enabled fraud, deception and misuse",4.640000000000001,4.04,18.745600000000003,0.325,12.653280000000002,limited
+UC04,Text content generation (reports and marketing),R01,Model risk and output reliability,2.94,2.52,7.4088,0.523,3.5339976,limited
+UC04,Text content generation (reports and marketing),R02,"Data quality, privacy and governance",3.36,2.6,8.736,0.36600000000000005,5.5386239999999995,limited
+UC04,Text content generation (reports and marketing),R03,Third-party dependency and concentration,4.4,2.84,12.496,0.29600000000000004,8.797184,limited
+UC04,Text content generation (reports and marketing),R04,Cyber and adversarial attacks,4.76,2.2,10.472,0.291,7.424648,limited
+UC04,Text content generation (reports and marketing),R05,Market correlation and herding,1.86,1.6400000000000001,3.0504000000000002,0.391,1.8576936000000002,limited
+UC04,Text content generation (reports and marketing),R06,"Governance, accountability and human oversight",3.18,2.8,8.904,0.434,5.039664,limited
+UC04,Text content generation (reports and marketing),R07,Explainability and transparency,3.92,2.7199999999999998,10.662399999999998,0.41700000000000004,6.216179199999998,limited
+UC04,Text content generation (reports and marketing),R08,Fairness and consumer protection,1.7,2.1799999999999997,3.7059999999999995,0.41400000000000003,2.1717159999999995,limited
+UC04,Text content generation (reports and marketing),R09,Regulatory classification and compliance,3.4,2.56,8.704,0.333,5.805568000000001,limited
+UC04,Text content generation (reports and marketing),R10,Operational resilience and continuity,3.52,3.32,11.686399999999999,0.37,7.362431999999999,limited
+UC04,Text content generation (reports and marketing),R11,"AI-enabled fraud, deception and misuse",4.16,3.44,14.3104,0.325,9.65952,limited
+UC05,Translation,R01,Model risk and output reliability,3.08,1.36,4.1888000000000005,0.523,1.9980576,minimal
+UC05,Translation,R02,"Data quality, privacy and governance",3.76,2.0,7.52,0.36600000000000005,4.767679999999999,minimal
+UC05,Translation,R03,Third-party dependency and concentration,4.4,1.6400000000000001,7.216000000000001,0.29600000000000004,5.080064,minimal
+UC05,Translation,R04,Cyber and adversarial attacks,3.36,2.2800000000000002,7.660800000000001,0.291,5.431507200000001,minimal
+UC05,Translation,R05,Market correlation and herding,1.92,1.32,2.5344,0.391,1.5434496000000002,minimal
+UC05,Translation,R06,"Governance, accountability and human oversight",3.36,1.4,4.704,0.434,2.662464,minimal
+UC05,Translation,R07,Explainability and transparency,3.04,1.1600000000000001,3.5264000000000006,0.41700000000000004,2.0558912,minimal
+UC05,Translation,R08,Fairness and consumer protection,1.8,1.3,2.3400000000000003,0.41400000000000003,1.37124,minimal
+UC05,Translation,R09,Regulatory classification and compliance,2.2,1.28,2.8160000000000003,0.333,1.8782720000000004,minimal
+UC05,Translation,R10,Operational resilience and continuity,3.64,1.56,5.678400000000001,0.37,3.5773920000000006,minimal
+UC05,Translation,R11,"AI-enabled fraud, deception and misuse",2.6,1.8399999999999999,4.784,0.325,3.2292,minimal
+UC06,AML/KYC screening and transaction monitoring,R01,Model risk and output reliability,1.28,3.18,4.0704,0.523,1.9415808,minimal
+UC06,AML/KYC screening and transaction monitoring,R02,"Data quality, privacy and governance",3.6,3.7,13.32,0.36600000000000005,8.44488,minimal
+UC06,AML/KYC screening and transaction monitoring,R03,Third-party dependency and concentration,2.5,3.3200000000000003,8.3,0.29600000000000004,5.8432,minimal
+UC06,AML/KYC screening and transaction monitoring,R04,Cyber and adversarial attacks,1.6,4.2,6.720000000000001,0.291,4.764480000000001,minimal
+UC06,AML/KYC screening and transaction monitoring,R05,Market correlation and herding,1.62,2.4400000000000004,3.9528000000000008,0.391,2.4072552000000003,minimal
+UC06,AML/KYC screening and transaction monitoring,R06,"Governance, accountability and human oversight",1.86,3.5,6.510000000000001,0.434,3.684660000000001,minimal
+UC06,AML/KYC screening and transaction monitoring,R07,Explainability and transparency,1.24,2.98,3.6952,0.41700000000000004,2.1543015999999997,minimal
+UC06,AML/KYC screening and transaction monitoring,R08,Fairness and consumer protection,2.88,3.28,9.446399999999999,0.41400000000000003,5.535590399999999,minimal
+UC06,AML/KYC screening and transaction monitoring,R09,Regulatory classification and compliance,2.12,3.38,7.1656,0.333,4.7794552,minimal
+UC06,AML/KYC screening and transaction monitoring,R10,Operational resilience and continuity,2.24,3.52,7.884800000000001,0.37,4.967424000000001,minimal
+UC06,AML/KYC screening and transaction monitoring,R11,"AI-enabled fraud, deception and misuse",2.2,3.2800000000000002,7.216000000000001,0.325,4.870800000000001,minimal
+UC07,Payment fraud detection,R01,Model risk and output reliability,1.8399999999999999,2.8400000000000003,5.2256,0.523,2.4926112,minimal
+UC07,Payment fraud detection,R02,"Data quality, privacy and governance",3.6,3.5,12.6,0.36600000000000005,7.988399999999999,minimal
+UC07,Payment fraud detection,R03,Third-party dependency and concentration,2.5,3.4,8.5,0.29600000000000004,5.984,minimal
+UC07,Payment fraud detection,R04,Cyber and adversarial attacks,1.6,4.36,6.976000000000001,0.291,4.945984000000001,minimal
+UC07,Payment fraud detection,R05,Market correlation and herding,1.8599999999999999,2.2800000000000002,4.2408,0.391,2.5826472,minimal
+UC07,Payment fraud detection,R06,"Governance, accountability and human oversight",2.58,3.1,7.998,0.434,4.526868,minimal
+UC07,Payment fraud detection,R07,Explainability and transparency,1.72,2.54,4.3688,0.41700000000000004,2.5470104,minimal
+UC07,Payment fraud detection,R08,Fairness and consumer protection,2.8,2.8,7.839999999999999,0.41400000000000003,4.594239999999999,minimal
+UC07,Payment fraud detection,R09,Regulatory classification and compliance,1.8,2.92,5.256,0.333,3.505752,minimal
+UC07,Payment fraud detection,R10,Operational resilience and continuity,2.7199999999999998,3.2399999999999998,8.8128,0.37,5.552064,minimal
+UC07,Payment fraud detection,R11,"AI-enabled fraud, deception and misuse",2.2,3.16,6.952000000000001,0.325,4.6926000000000005,minimal
+UC08,Creditworthiness assessment of natural persons,R01,Model risk and output reliability,1.42,4.04,5.7368,0.523,2.7364536,high
+UC08,Creditworthiness assessment of natural persons,R02,"Data quality, privacy and governance",3.48,5.0,17.4,0.36600000000000005,11.031599999999997,high
+UC08,Creditworthiness assessment of natural persons,R03,Third-party dependency and concentration,2.2,3.96,8.712,0.29600000000000004,6.133247999999999,high
+UC08,Creditworthiness assessment of natural persons,R04,Cyber and adversarial attacks,2.88,4.12,11.8656,0.291,8.412710400000002,high
+UC08,Creditworthiness assessment of natural persons,R05,Market correlation and herding,1.58,2.2800000000000002,3.6024000000000007,0.391,2.1938616000000004,high
+UC08,Creditworthiness assessment of natural persons,R06,"Governance, accountability and human oversight",1.94,4.6,8.924,0.434,5.050984000000001,high
+UC08,Creditworthiness assessment of natural persons,R07,Explainability and transparency,2.36,4.84,11.4224,0.41700000000000004,6.659259199999999,high
+UC08,Creditworthiness assessment of natural persons,R08,Fairness and consumer protection,3.6999999999999997,5.0,18.5,0.41400000000000003,10.841,high
+UC08,Creditworthiness assessment of natural persons,R09,Regulatory classification and compliance,3.8,4.72,17.936,0.333,11.963312,high
+UC08,Creditworthiness assessment of natural persons,R10,Operational resilience and continuity,2.16,4.4399999999999995,9.590399999999999,0.37,6.041951999999999,high
+UC08,Creditworthiness assessment of natural persons,R11,"AI-enabled fraud, deception and misuse",4.0,4.76,19.04,0.325,12.852,high
+UC09,Life and health insurance risk assessment and pricing,R01,Model risk and output reliability,1.42,4.04,5.7368,0.523,2.7364536,high
+UC09,Life and health insurance risk assessment and pricing,R02,"Data quality, privacy and governance",3.48,5.0,17.4,0.36600000000000005,11.031599999999997,high
+UC09,Life and health insurance risk assessment and pricing,R03,Third-party dependency and concentration,2.2,3.96,8.712,0.29600000000000004,6.133247999999999,high
+UC09,Life and health insurance risk assessment and pricing,R04,Cyber and adversarial attacks,2.88,4.12,11.8656,0.291,8.412710400000002,high
+UC09,Life and health insurance risk assessment and pricing,R05,Market correlation and herding,1.58,2.2800000000000002,3.6024000000000007,0.391,2.1938616000000004,high
+UC09,Life and health insurance risk assessment and pricing,R06,"Governance, accountability and human oversight",1.94,4.6,8.924,0.434,5.050984000000001,high
+UC09,Life and health insurance risk assessment and pricing,R07,Explainability and transparency,2.36,4.84,11.4224,0.41700000000000004,6.659259199999999,high
+UC09,Life and health insurance risk assessment and pricing,R08,Fairness and consumer protection,3.6999999999999997,5.0,18.5,0.41400000000000003,10.841,high
+UC09,Life and health insurance risk assessment and pricing,R09,Regulatory classification and compliance,3.8,4.72,17.936,0.333,11.963312,high
+UC09,Life and health insurance risk assessment and pricing,R10,Operational resilience and continuity,2.16,4.4399999999999995,9.590399999999999,0.37,6.041951999999999,high
+UC09,Life and health insurance risk assessment and pricing,R11,"AI-enabled fraud, deception and misuse",4.0,4.76,19.04,0.325,12.852,high
+UC10,Investment research and portfolio analytics,R01,Model risk and output reliability,3.72,2.74,10.192800000000002,0.523,4.8619656,minimal
+UC10,Investment research and portfolio analytics,R02,"Data quality, privacy and governance",3.44,1.8,6.192,0.36600000000000005,3.9257279999999994,minimal
+UC10,Investment research and portfolio analytics,R03,Third-party dependency and concentration,4.1,2.84,11.643999999999998,0.29600000000000004,8.197375999999998,minimal
+UC10,Investment research and portfolio analytics,R04,Cyber and adversarial attacks,3.2399999999999998,2.92,9.460799999999999,0.291,6.7077072,minimal
+UC10,Investment research and portfolio analytics,R05,Market correlation and herding,3.7399999999999998,4.04,15.109599999999999,0.391,9.2017464,minimal
+UC10,Investment research and portfolio analytics,R06,"Governance, accountability and human oversight",3.26,2.4,7.823999999999999,0.434,4.428383999999999,minimal
+UC10,Investment research and portfolio analytics,R07,Explainability and transparency,3.04,1.56,4.7424,0.41700000000000004,2.7648192,minimal
+UC10,Investment research and portfolio analytics,R08,Fairness and consumer protection,1.8,1.24,2.232,0.41400000000000003,1.307952,minimal
+UC10,Investment research and portfolio analytics,R09,Regulatory classification and compliance,2.2,1.98,4.356,0.333,2.905452,minimal
+UC10,Investment research and portfolio analytics,R10,Operational resilience and continuity,3.44,2.96,10.1824,0.37,6.414911999999999,minimal
+UC10,Investment research and portfolio analytics,R11,"AI-enabled fraud, deception and misuse",2.48,2.32,5.7536,0.325,3.88368,minimal
+UC11,Algorithmic trading and execution,R01,Model risk and output reliability,3.06,3.22,9.853200000000001,0.523,4.699976400000001,minimal
+UC11,Algorithmic trading and execution,R02,"Data quality, privacy and governance",2.08,1.6,3.3280000000000003,0.36600000000000005,2.109952,minimal
+UC11,Algorithmic trading and execution,R03,Third-party dependency and concentration,2.2,3.8800000000000003,8.536000000000001,0.29600000000000004,6.0093440000000005,minimal
+UC11,Algorithmic trading and execution,R04,Cyber and adversarial attacks,1.48,3.64,5.3872,0.291,3.8195248000000004,minimal
+UC11,Algorithmic trading and execution,R05,Market correlation and herding,4.34,4.84,21.005599999999998,0.391,12.792410399999998,minimal
+UC11,Algorithmic trading and execution,R06,"Governance, accountability and human oversight",3.02,2.8,8.456,0.434,4.786096000000001,minimal
+UC11,Algorithmic trading and execution,R07,Explainability and transparency,2.08,1.7200000000000002,3.5776000000000003,0.41700000000000004,2.0857408,minimal
+UC11,Algorithmic trading and execution,R08,Fairness and consumer protection,1.9,1.18,2.242,0.41400000000000003,1.313812,minimal
+UC11,Algorithmic trading and execution,R09,Regulatory classification and compliance,1.0,2.26,2.26,0.333,1.50742,minimal
+UC11,Algorithmic trading and execution,R10,Operational resilience and continuity,2.88,3.52,10.137599999999999,0.37,6.3866879999999995,minimal
+UC11,Algorithmic trading and execution,R11,"AI-enabled fraud, deception and misuse",1.3599999999999999,2.44,3.3183999999999996,0.325,2.2399199999999997,minimal
+UC12,Recruitment and HR screening,R01,Model risk and output reliability,3.22,2.52,8.1144,0.523,3.8705687999999996,high
+UC12,Recruitment and HR screening,R02,"Data quality, privacy and governance",4.5600000000000005,3.8,17.328,0.36600000000000005,10.985951999999997,high
+UC12,Recruitment and HR screening,R03,Third-party dependency and concentration,4.4,2.2,9.680000000000001,0.29600000000000004,6.81472,high
+UC12,Recruitment and HR screening,R04,Cyber and adversarial attacks,3.36,3.3200000000000003,11.1552,0.291,7.909036800000001,high
+UC12,Recruitment and HR screening,R05,Market correlation and herding,1.98,1.6400000000000001,3.2472000000000003,0.391,1.9775448000000002,high
+UC12,Recruitment and HR screening,R06,"Governance, accountability and human oversight",3.54,2.8,9.911999999999999,0.434,5.610192,high
+UC12,Recruitment and HR screening,R07,Explainability and transparency,3.16,3.12,9.859200000000001,0.41700000000000004,5.7479136,high
+UC12,Recruitment and HR screening,R08,Fairness and consumer protection,4.3,3.94,16.942,0.41400000000000003,9.928011999999999,high
+UC12,Recruitment and HR screening,R09,Regulatory classification and compliance,3.8,3.16,12.008,0.333,8.009336,high
+UC12,Recruitment and HR screening,R10,Operational resilience and continuity,3.7600000000000002,2.12,7.9712000000000005,0.37,5.0218560000000005,high
+UC12,Recruitment and HR screening,R11,"AI-enabled fraud, deception and misuse",3.08,2.56,7.8848,0.325,5.322240000000001,high
+UC13,Code generation and IT operations,R01,Model risk and output reliability,3.22,2.08,6.6976,0.523,3.1947552,minimal
+UC13,Code generation and IT operations,R02,"Data quality, privacy and governance",3.68,1.8,6.6240000000000006,0.36600000000000005,4.199616,minimal
+UC13,Code generation and IT operations,R03,Third-party dependency and concentration,4.7,2.6799999999999997,12.595999999999998,0.29600000000000004,8.867583999999999,minimal
+UC13,Code generation and IT operations,R04,Cyber and adversarial attacks,3.48,2.84,9.883199999999999,0.291,7.0071888,minimal
+UC13,Code generation and IT operations,R05,Market correlation and herding,2.08,1.96,4.0768,0.391,2.4827712,minimal
+UC13,Code generation and IT operations,R06,"Governance, accountability and human oversight",3.64,2.2,8.008000000000001,0.434,4.532528000000001,minimal
+UC13,Code generation and IT operations,R07,Explainability and transparency,3.16,1.48,4.6768,0.41700000000000004,2.7265744,minimal
+UC13,Code generation and IT operations,R08,Fairness and consumer protection,1.9,1.24,2.356,0.41400000000000003,1.3806159999999998,minimal
+UC13,Code generation and IT operations,R09,Regulatory classification and compliance,2.2,1.8399999999999999,4.048,0.333,2.700016,minimal
+UC13,Code generation and IT operations,R10,Operational resilience and continuity,3.96,2.6799999999999997,10.612799999999998,0.37,6.686063999999999,minimal
+UC13,Code generation and IT operations,R11,"AI-enabled fraud, deception and misuse",2.48,2.2,5.456,0.325,3.6828000000000003,minimal

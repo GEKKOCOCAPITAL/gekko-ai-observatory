@@ -1,0 +1,25 @@
+id,objective,check,status,value,threshold,note
+V01,O5,"Task database integrity (ratings in {0,0.5,1}; time shares sum to 1)",PASS,no errors,,
+V02,O5,Use-case mix rows sum to 1,PASS,2.22e-16,< 1e-6,
+V03,O5,Every sub-sector has tasks and a use-case mix,PASS,all present,,
+V04,O3,Accounting identity dLP = (1+dVA)/(1+dL)-1 on all draws,PASS,max error 0.0e+00,< 1e-9,
+V05,O3,Zero adoption implies zero impact,PASS,max |effect| 0.0e+00,< 1e-12,
+V06,O3,Monotonicity: higher exposure -> more time saved and higher productivity,PASS,21 exposure grid points (0 to 1),,
+V07,O3,Diffusion calibration reproduces CSSF/BCL adoption 2021/22 -> 2024 (30% -> 43%),PASS,r = 0.232/yr; fitted 2024 share = 0.430,|error| < 1e-6,"Exactly identified with two survey waves - calibration, not an out-of-sample test"
+V08,O3,"Monte-Carlo convergence: median 2030 employment effect, N/2 vs N draws",PASS,relative difference 0.221%,< 2%,
+V09,O3,Seed stability: median 2030 employment effect under a different seed,PASS,relative difference 0.512%,< 2%,
+V10,O3,Scenario ordering of median 2030 productivity effect (S1 < S2 < S3),PASS,cautious 0.88% < central 3.77% < accelerated 9.96%,,
+V11,O3,"Documented uncertainty: p05 <= p50 <= p95 with non-zero width for every sub-sector, year and metric",PASS,675 ranges checked,,
+V12,O3,Plausibility vs literature: implied annual labour-productivity contribution 2025-2030,PASS,cautious 0.18%/yr; central 0.74%/yr; accelerated 1.92%/yr,"S1 0.05-1%, S2 0.2-3%, S3 0.5-6% per year",Bands bracket Acemoglu (2024) economy-wide lower bound and task-level field evidence (14-40% time savings) scaled by exposure and adoption
+V13,O3,"Coverage: every sub-sector has ranges for every scenario, metric and year",PASS,8/8 sub-sectors,,
+V14,O4,Every risk category maps to at least one regulatory reference,PASS,11/11 mapped,,
+V15,O4,All FSB (2024) AI vulnerabilities covered by the taxonomy,PASS,5/5 covered,,
+V16,O4,Alignment depth: categories referencing the AI Act / DORA,PASS,"AI Act 9/11, DORA 6/11","AI Act >= 8, DORA >= 4",
+V17,O4,Likelihood and impact weights sum to 1 (scores bounded 1-25),PASS,all valid,,
+V18,O4,AI Act classification vignettes (13 archetypes incl. Annex III 5(b)/5(c)/4 and fraud carve-out),PASS,13/13 correct,13/13,
+V19,O4,"Residual <= inherent and inherent within [1, 25] for all use-case x category cells",PASS,143 cells,,
+V20,O4,Monotonicity (500 random profiles): more controls never raise residual; riskier attributes never lower inherent,PASS,"violations: controls 0, attributes 0",,
+V21,O4,Benchmark: employment-weighted share of AI use classified high-risk vs CSSF/BCL self-assessment (5%),PASS,6.6%,2%-12% (5% +/- survey uncertainty incl. 29% unclassified),
+V22,O4,"Expert review of taxonomy, weights and control coverage (validation workshop)",PENDING,review form and Fleiss-kappa scorer ready (docs/workshop),kappa >= 0.40 and all critical comments resolved,Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv
+V23,O5,Determinism: identical results when re-run with the same seed,PASS,ae87c899594822ee / ae87c899594822ee,,
+V24,O5,Employment covered by integrated sub-sectors (CSSF/CAA-registered entities),INFO,"57,229 employees in 8 sub-sectors",,"LFF 2024 total of 73,272 also includes legal/audit/consulting (~28%), holdings and other financial services"
