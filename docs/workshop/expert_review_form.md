@@ -2,7 +2,7 @@
 
 **Project:** AI and the Transformation of Luxembourg's Financial Sector (LuxFin-AI Observatory)
 **Applicant:** Gekko & Co. Capital SCSp · General Partner: RM MANAGEMENT SPF
-**Toolkit version reviewed:** 0.9.0 · **Run hash (central):** see `outputs/run_manifest.json`
+**Toolkit version reviewed:** 0.9.1 · **Run hash (central):** see `outputs/run_manifest.json`
 
 Reviewer role: ☐ Risk / compliance ☐ Fund industry ☐ Banking ☐ Insurance ☐ Supervisor / public body ☐ Academic ☐ Other
 Participation is voluntary; no budget transfer (application §7.3.4). No personal data beyond name/role is recorded.

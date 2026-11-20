@@ -1,6 +1,6 @@
-# LuxFin-AI Observatory – prototype toolkit (v0.9.0)
+# LuxFin-AI Observatory – prototype toolkit (v0.9.1)
 
-[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) ![licence](https://img.shields.io/badge/licence-Apache--2.0-blue) ![version](https://img.shields.io/badge/version-0.9.0-9c8660)
+[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) ![licence](https://img.shields.io/badge/licence-Apache--2.0-blue) ![version](https://img.shields.io/badge/version-0.9.1-9c8660)
 
 Open, reproducible toolkit that links **AI exposure**, **adoption**, **impact scenarios** and **regulatory risk scoring**
 for Luxembourg's financial sector. Developed by **Gekko & Co. Capital SCSp** (managed by RM MANAGEMENT SPF) under the

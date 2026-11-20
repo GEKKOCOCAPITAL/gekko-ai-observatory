@@ -10,4 +10,4 @@ pipeline   : integrated, reproducible end-to-end run (O5)
 validation : automated validation checks used by the pipeline and tests
 """
 
-__version__ = "0.9.0"
+__version__ = "0.9.1"

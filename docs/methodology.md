@@ -1,4 +1,4 @@
-# Methodology (v0.9.0)
+# Methodology (v0.9.1)
 
 ## 1. Scope
 Eight sub-sectors of CSSF/CAA-supervised entities, 57,229 employees (CSSF, mid-2026; insurance 2020; brokers 2025):
