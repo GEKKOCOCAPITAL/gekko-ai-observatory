@@ -20,6 +20,7 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 |---|---|
 | Gekko & Co. Capital SCSp | <https://bio.site/gekkococapital.eu> |
 | GEKKO-AI Observatory project hub | <https://tinyurl.com/gekkoaiobservatory> |
+| Live dashboard | <https://gekko-ai-observatory.streamlit.app> |
 | M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
 
 ## Quick start
@@ -63,4 +64,4 @@ where source rights permit. "LuxFin-AI Observatory" name retained by the applica
 The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.io): sign in with the RMManagement
 GitHub account, choose **Create app**, select `RMManagement/gekko-ai-observatory`, branch `main`, main file
 `app/streamlit_app.py`, and deploy. Dependencies come from `requirements.txt`, colours from `.streamlit/config.toml`.
-Add the app's URL to the Links table above once it is live.
+Live at <https://gekko-ai-observatory.streamlit.app>.
