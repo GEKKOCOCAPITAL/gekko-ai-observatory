@@ -15,6 +15,13 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 | **O4** | `luxfin_ai/risk.py`, `data/risk_taxonomy.yaml` | 11-category AI risk taxonomy mapped to the AI Act (as amended by the Digital Omnibus), DORA and FSB vulnerabilities; transparent scoring grid; AI Act classification helper; Fleiss-kappa for expert review |
 | **O5** | `luxfin_ai/pipeline.py`, `app/` | One-command integrated run with validation checks, run manifest (input hashes, results hash), figures, dashboard payload and Streamlit dashboard |
 
+## Links
+| | |
+|---|---|
+| Gekko & Co. Capital SCSp | <https://bio.site/gekkococapital.eu> |
+| GEKKO-AI Observatory project hub | <https://tinyurl.com/gekkoaiobservatory> |
+| M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
+
 ## Quick start
 ```bash
 pip install -e ".[app,dev]"
@@ -50,3 +57,4 @@ where source rights permit. "LuxFin-AI Observatory" name retained by the applica
 ## Written report
 `docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf` — M3 results and validation report (rebuild with
 `make test && python docs/build_report.py` after `luxfin run`; the committed copy carries Adobe security settings that a rebuild does not reproduce). Validation workshop materials: `docs/workshop/`.
+
