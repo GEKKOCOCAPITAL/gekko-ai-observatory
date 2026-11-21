@@ -52,7 +52,7 @@ written report.
   (`subsector, year, adoption_share, n_docs`); sub-sectors with ≥30 documents switch from survey to NLP adoption.
 
 ## Credits
-Project leader: **Rafael Mendes** ([ORCID 0009-0008-5585-0631](https://orcid.org/0009-0008-5585-0631)) (RM MANAGEMENT SPF, General Partner and Manager of Gekko & Co. Capital SCSp).
+Project leader: (Gekko & Co. Capital SCSp) contributors RM Management SPF, Charles Schwab Research  and Rafael Mendes ([ORCID 0009-0008-5585-0631](https://orcid.org/0009-0008-5585-0631))
 
 ## Licence
 Code: Apache-2.0. Data compiled from public sources; see each source's terms. Datasets produced by the toolkit: CC BY 4.0
