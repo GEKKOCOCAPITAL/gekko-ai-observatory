@@ -58,3 +58,9 @@ where source rights permit. "LuxFin-AI Observatory" name retained by the applica
 `docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf` — M3 results and validation report (rebuild with
 `make test && python docs/build_report.py` after `luxfin run`; the committed copy carries Adobe security settings that a rebuild does not reproduce). Validation workshop materials: `docs/workshop/`.
 
+
+## Hosting the dashboard
+The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.io): sign in with the RMManagement
+GitHub account, choose **Create app**, select `RMManagement/gekko-ai-observatory`, branch `main`, main file
+`app/streamlit_app.py`, and deploy. Dependencies come from `requirements.txt`, colours from `.streamlit/config.toml`.
+Add the app's URL to the Links table above once it is live.
