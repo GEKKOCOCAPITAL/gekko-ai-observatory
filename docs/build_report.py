@@ -225,7 +225,7 @@ rows = [["Item", "Deliverable", "Status", "Location"],
         ["Integrated toolkit and dashboard (O5)", "D5.1", "Built; end-to-end run, determinism and 18 tests pass", "luxfin_ai/pipeline.py, app/"],
         ["Internal review by the project leader", "M3", "Done 20/11/2026: agreed on items A1-B3, usability 5/5, no changes requested", "docs/workshop/internal_review_2026-11-20.md"],
         ["Validation workshop with external expert users", "M3", "Pending - materials ready", "docs/workshop/"],
-        ["Public report and open repository", "D5.2, D5.3", "Repository on GitHub (private); public release pending", "github.com/RMManagement/gekko-ai-observatory"],
+        ["Public report and open repository", "D5.2, D5.3", "Repository on GitHub (private); public release pending", "github.com/GEKKOCOCAPITAL/gekko-ai-observatory"],
         ["Exposure index (O1) and NLP pipeline (O2)", "D2.1, D3.2", "Interfaces built; v0.1 provisional inputs used until WP2/WP3 outputs are plugged in", "data/tasks.csv, config adoption_signals"]]
 S.append(table(rows, [48 * mm, 18 * mm, 58 * mm, 50 * mm]))
 
@@ -351,7 +351,7 @@ S += bullets([
     "<b>Model scope.</b> Partial-equilibrium, sector-level model with a single demand elasticity; no resident vs cross-border split, wage effects "
     "or second-round effects on the rest of the economy (LFF estimates one additional job elsewhere per financial-sector job).",
     "<b>Out of scope in v0.9.</b> Legal, audit and consulting services and SOPARFI holdings (included in the LFF 73,272 total).",
-    "<b>Publication.</b> The repository is on GitHub (RMManagement/gekko-ai-observatory, release v0.9.1) under an Apache-2.0 "
+    "<b>Publication.</b> The repository is on GitHub (GEKKOCOCAPITAL/gekko-ai-observatory, release v0.9.1) under an Apache-2.0 "
     "licence and is kept private until the external workshop; the public report (D5.2) and public release (D5.3) follow then.",
 ])
 

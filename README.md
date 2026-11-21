@@ -61,7 +61,7 @@ where source rights permit. "LuxFin-AI Observatory" name retained by the applica
 
 
 ## Hosting the dashboard
-The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.io): sign in with the RMManagement
-GitHub account, choose **Create app**, select `RMManagement/gekko-ai-observatory`, branch `main`, main file
+The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.io): sign in with the GEKKOCOCAPITAL
+GitHub account, choose **Create app**, select `GEKKOCOCAPITAL/gekko-ai-observatory`, branch `main`, main file
 `app/streamlit_app.py`, and deploy. Dependencies come from `requirements.txt`, colours from `.streamlit/config.toml`.
 Live at <https://gekko-ai-observatory.streamlit.app>.
