@@ -1,4 +1,4 @@
-"""LuxFin-AI Observatory - interactive dashboard (Streamlit).
+"""GEKKO-AI Observatory - interactive dashboard (Streamlit).
 
 Run:  streamlit run app/streamlit_app.py
 """
@@ -20,7 +20,7 @@ from luxfin_ai import risk as rk
 from luxfin_ai import scenarios as sc
 
 COL = {"cautious": "#2a78d6", "central": "#eb6834", "accelerated": "#1baf7a"}
-st.set_page_config(page_title="LuxFin-AI Observatory", layout="wide")
+st.set_page_config(page_title="GEKKO-AI Observatory", layout="wide")
 
 
 @st.cache_data
@@ -47,7 +47,7 @@ logo = ROOT / "docs/assets/gekko_logo.jpg"
 with st.sidebar:
     if logo.exists():
         st.image(str(logo), width=180)
-    st.markdown("**LuxFin-AI Observatory** - prototype v0.9")
+    st.markdown("**GEKKO-AI Observatory** - prototype v0.9")
     page = st.radio("View", ["Overview", "Exposure", "Scenarios (O3)", "Risk (O4)", "Use-case assessor", "Validation (O5)"])
     st.caption("Results are model scenarios relative to a no-AI counterfactual, not forecasts.")
 
