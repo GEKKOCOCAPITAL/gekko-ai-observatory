@@ -51,6 +51,9 @@ written report.
 * Set `data.adoption_signals` in `config/default.yaml` to the WP3 adoption dataset
   (`subsector, year, adoption_share, n_docs`); sub-sectors with ≥30 documents switch from survey to NLP adoption.
 
+## Credits
+Project leader: **Rafael Mendes** (RM MANAGEMENT SPF, General Partner and Manager of Gekko & Co. Capital SCSp).
+
 ## Licence
 Code: Apache-2.0. Data compiled from public sources; see each source's terms. Datasets produced by the toolkit: CC BY 4.0
 where source rights permit. "LuxFin-AI Observatory" name retained by the applicant.

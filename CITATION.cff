@@ -5,6 +5,9 @@ version: 0.9.1
 date-released: 2026-11-20
 license: Apache-2.0
 authors:
+  - family-names: Mendes
+    given-names: Rafael
+    affiliation: "RM MANAGEMENT SPF, General Partner and Manager of Gekko & Co. Capital SCSp"
   - name: "Gekko & Co. Capital SCSp"
     address: "54, Rue du Parc"
     city: Dudelange
