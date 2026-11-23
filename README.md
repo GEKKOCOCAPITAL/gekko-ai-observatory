@@ -21,8 +21,7 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 | Gekko & Co. Capital SCSp | <https://bio.site/gekkococapital.eu> |
 | GEKKO-AI Observatory project hub | <https://tinyurl.com/gekkoaiobservatory> |
 | Gekko AI Observatory plus | <https://tinyurl.com/gekkoaiobservatoryplus> |
-| Live dashboard | <https://gekko-ai-observatory.streamlit.app> |
-| Live dashboard (NiceGUI) | <https://gekkococapital-gekko-ai-observatory.hf.space> |
+| Live dashboard | <https://gekkococapital-gekko-ai-observatory.hf.space> |
 | M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
 
 ## Quick start
@@ -69,7 +68,7 @@ where source rights permit. "LuxFin-AI Observatory" name retained by the applica
 The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.io): sign in with the GEKKOCOCAPITAL
 GitHub account, choose **Create app**, select `GEKKOCOCAPITAL/gekko-ai-observatory`, branch `main`, main file
 `app/streamlit_app.py`, and deploy. Dependencies come from `requirements.txt`, colours from `.streamlit/config.toml`.
-Live at <https://gekko-ai-observatory.streamlit.app>.
+The public dashboard is the NiceGUI version below.
 
 ## NiceGUI version of the dashboard
 `app/nicegui_app.py` offers the same six views built with [NiceGUI](https://nicegui.io): `pip install -r requirements-nicegui.txt`
