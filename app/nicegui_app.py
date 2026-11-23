@@ -108,18 +108,19 @@ def view_scenarios():
     ui.label("Impact scenarios to 2030 (Monte-Carlo)").classes("text-xl font-bold")
     state = {"scen": "central", "metric": "jobs", "n": 5000,
              "modes": {k: CFG["scenarios"]["central"][k][1] for k in ["time_saving", "depth_2030", "reinstatement", "ceiling"]}}
-    out = ui.column().classes("w-full")
     sliders = {}
+    holder = {}
 
     def render():
         subs, tot, sens = run_scenario(state["scen"], state["modes"], state["n"])
+        out = holder["out"]
         out.clear()
         with out:
             d = tot[tot["metric"] == state["metric"]]
             fig = go.Figure([
                 go.Scatter(x=list(d["year"]) + list(d["year"][::-1]), y=list(d["p95"]) + list(d["p05"][::-1]),
-                           fill="toself", fillcolor="rgba(235,104,52,0.15)", line=dict(width=0), name="90% band"),
-                go.Scatter(x=d["year"], y=d["p50"], line=dict(color=COL[state["scen"]], width=2), name="Median")])
+                           fill="toself", fillcolor="rgba(235,104,52,0.15)", line=dict(width=0), mode="lines", name="90% band"),
+                go.Scatter(x=d["year"], y=d["p50"], line=dict(color=COL[state["scen"]], width=2), mode="lines", name="Median")])
             ui.plotly(fig_layout(fig)).classes("w-full")
             y = subs[(subs["metric"] == state["metric"]) & (subs["year"] == CFG["run"]["horizon"])].copy()
             y["name"] = y["subsector"].map(NAMES)
@@ -151,6 +152,7 @@ def view_scenarios():
                 state["modes"][key] = float(sliders[key].value)
                 render()
             sliders[k].on("change", changed)
+    holder["out"] = ui.column().classes("w-full")
     render()
 
 
