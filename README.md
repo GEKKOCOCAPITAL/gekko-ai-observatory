@@ -22,6 +22,7 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 | GEKKO-AI Observatory project hub | <https://tinyurl.com/gekkoaiobservatory> |
 | Gekko AI Observatory plus | <https://tinyurl.com/gekkoaiobservatoryplus> |
 | Live dashboard | <https://gekko-ai-observatory.streamlit.app> |
+| Live dashboard (NiceGUI) | <https://gekkococapital-gekko-ai-observatory.hf.space> |
 | M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
 
 ## Quick start
