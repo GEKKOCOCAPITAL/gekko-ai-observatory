@@ -69,3 +69,9 @@ The dashboard is ready for [Streamlit Community Cloud](https://share.streamlit.i
 GitHub account, choose **Create app**, select `GEKKOCOCAPITAL/gekko-ai-observatory`, branch `main`, main file
 `app/streamlit_app.py`, and deploy. Dependencies come from `requirements.txt`, colours from `.streamlit/config.toml`.
 Live at <https://gekko-ai-observatory.streamlit.app>.
+
+## NiceGUI version of the dashboard
+`app/nicegui_app.py` offers the same six views built with [NiceGUI](https://nicegui.io): `pip install -r requirements-nicegui.txt`
+then `python app/nicegui_app.py` (http://localhost:8080). It is deployed to a Hugging Face Space by
+`.github/workflows/hf-space.yml` on every push to `main`, once the repository secret `HF_TOKEN` (Hugging Face write token)
+and the repository variable `HF_SPACE` (e.g. `user/gekko-ai-observatory`) are set. UI test: `pytest -c tests_ui/pytest.ini --rootdir tests_ui tests_ui`.

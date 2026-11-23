@@ -9,6 +9,7 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install ".[app,dev]"
       - run: pytest -q
+      - run: pip install nicegui pytest-asyncio && pytest -q -c tests_ui/pytest.ini --rootdir tests_ui tests_ui
       - run: luxfin run
       - uses: actions/upload-artifact@v4
         with: {name: outputs, path: outputs/}
