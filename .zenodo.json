@@ -1,0 +1,56 @@
+{
+  "title": "GEKKO-AI Observatory: AI exposure, adoption, impact scenarios and risk scoring for Luxembourg's financial sector",
+  "upload_type": "software",
+  "license": "apache-2.0",
+  "description": "Open, reproducible toolkit linking task-level AI exposure, adoption, Monte-Carlo impact scenarios to 2030 and an AI risk taxonomy aligned with the EU AI Act, DORA and FSB vulnerabilities, for Luxembourg's financial sector. Developed by Gekko & Co. Capital SCSp under the research project 'Artificial Intelligence and the Transformation of Luxembourg's Financial Sector: Impacts, Opportunities and Risks'.",
+  "creators": [
+    {
+      "name": "Gekko & Co. Capital SCSp"
+    },
+    {
+      "name": "RM Management SPF"
+    },
+    {
+      "name": "Mendes, Rafael",
+      "orcid": "0009-0008-5585-0631",
+      "affiliation": "RM MANAGEMENT SPF"
+    }
+  ],
+  "contributors": [
+    {
+      "name": "Gekko & Co. Capital SCSp",
+      "type": "DataCollector"
+    },
+    {
+      "name": "RM Management SPF",
+      "type": "DataCollector"
+    },
+    {
+      "name": "Mendes, Rafael",
+      "orcid": "0009-0008-5585-0631",
+      "type": "DataCollector"
+    },
+    {
+      "name": "Charles Schwab Research",
+      "type": "DataCollector"
+    }
+  ],
+  "keywords": [
+    "artificial intelligence",
+    "financial sector",
+    "Luxembourg",
+    "AI Act",
+    "DORA",
+    "risk taxonomy",
+    "Monte Carlo",
+    "labour market"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.14293/PR2199.004967.v1",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "publication-preprint"
+    }
+  ]
+}

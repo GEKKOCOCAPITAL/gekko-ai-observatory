@@ -22,7 +22,15 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 | GEKKO-AI Observatory project hub | <https://tinyurl.com/gekkoaiobservatory> |
 | Gekko AI Observatory plus | <https://tinyurl.com/gekkoaiobservatoryplus> |
 | Live dashboard | <https://gekkococapital-gekko-ai-observatory.hf.space> |
+| Research report (Nov 2026, CC BY 4.0) | [PDF](docs/research/Artificial_Intelligence_and_the_Transformation_of_Luxembourgs_Financial_Sector_Research_Report_2026.pdf) · ScienceOpen preprint DOI [10.14293/PR2199.004967.v1](https://doi.org/10.14293/PR2199.004967.v1) |
 | M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
+
+### Note on the two sets of results
+The research report (Annex A) uses its own scenario model: four LFF segments, 20,000 draws per scenario,
+central result +5.7% labour productivity and about -1,500 jobs by 2030. The toolkit in this repository models eight
+CSSF/CAA sub-sectors with 10,000 draws (central: +3.8% productivity, about -1,200 jobs) and adds demand and
+new-task effects. Both are conditional scenarios relative to a no-AI baseline, not forecasts; figures from one should
+not be read as a check on the other.
 
 ## Quick start
 ```bash

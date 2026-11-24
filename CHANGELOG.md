@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased - 2026-11-24
+- Added the research report (November 2026, CC BY 4.0; ScienceOpen preprint DOI 10.14293/PR2199.004967.v1) in docs/research/.
+- Added .zenodo.json metadata for archiving on Zenodo.
+- NiceGUI dashboard deployed to Hugging Face Spaces.
+
 ## 0.9.1 - 2026-11-20
 - Fix: the toolkit now finds its data and configuration when installed as a regular package (pip install . / Docker / CI).
 - Repository renamed to gekko-ai-observatory.
