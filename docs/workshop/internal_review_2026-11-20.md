@@ -16,4 +16,4 @@
 
 **Status.** No changes requested. This is an internal review by the project leader (one reviewer). It does not replace
 the validation workshop with external expert users required for M3; inter-rater agreement (Fleiss' kappa) can only be
-computed once at least two reviewers have answered. Validation check V22 therefore remains PENDING.
+computed once at least two reviewers have answered. Validation check V23 (external expert workshop) therefore remains PENDING.
