@@ -1,6 +1,6 @@
 # LuxFin-AI Observatory – prototype toolkit (v0.9.2)
 
-[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) ![licence](https://img.shields.io/badge/licence-Apache--2.0-blue) ![version](https://img.shields.io/badge/version-0.9.2-9c8660) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24511514.svg)](https://doi.org/10.5281/zenodo.24511514)
+[![ci](../../actions/workflows/ci.yml/badge.svg)](../../actions/workflows/ci.yml) ![licence](https://img.shields.io/badge/licence-Apache--2.0-blue) ![version](https://img.shields.io/badge/version-0.9.2-9c8660) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24511514.svg)](https://doi.org/10.5281/zenodo.24511514) [![Paper DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24512015.svg)](https://doi.org/10.5281/zenodo.24512015)
 
 Open, reproducible toolkit that links **AI exposure**, **adoption**, **impact scenarios** and **regulatory risk scoring**
 for Luxembourg's financial sector. Developed by **Gekko & Co. Capital SCSp** (managed by RM MANAGEMENT SPF) under the
@@ -23,7 +23,7 @@ and Risks"* — milestone **M3: toolkit, dashboard, scenario and risk modules in
 | Gekko AI Observatory plus | <https://tinyurl.com/gekkoaiobservatoryplus> |
 | Live dashboard | <https://gekkococapital-gekko-ai-observatory.hf.space> |
 | Toolkit archive (Zenodo, all versions) | DOI [10.5281/zenodo.24511514](https://doi.org/10.5281/zenodo.24511514) |
-| Research report (Nov 2026, CC BY 4.0) | [PDF](docs/research/Artificial_Intelligence_and_the_Transformation_of_Luxembourgs_Financial_Sector_Research_Report_2026.pdf) · ScienceOpen preprint DOI [10.14293/PR2199.004967.v1](https://doi.org/10.14293/PR2199.004967.v1) |
+| Research report (Nov 2026, CC BY 4.0) | [PDF](docs/research/Artificial_Intelligence_and_the_Transformation_of_Luxembourgs_Financial_Sector_Research_Report_2026.pdf) · Zenodo DOI [10.5281/zenodo.24512015](https://doi.org/10.5281/zenodo.24512015) · ScienceOpen preprint DOI [10.14293/PR2199.004967.v1](https://doi.org/10.14293/PR2199.004967.v1) |
 | M3 results and validation report | [`docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf`](docs/GEKKO-AI_M3_Results_and_Validation_Report.pdf) |
 
 ### Note on the two sets of results

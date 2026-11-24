@@ -19,3 +19,20 @@ abstract: >-
   Open, reproducible prototype linking task-level AI exposure, adoption, Monte-Carlo impact scenarios to 2030
   (productivity, employment, value added) and an AI risk taxonomy aligned with the EU AI Act, DORA and FSB
   vulnerabilities, for Luxembourg's financial sector.
+references:
+  - type: report
+    title: "Artificial Intelligence and the Transformation of Luxembourg's Financial Sector: Impacts, Opportunities and Risks"
+    year: 2026
+    doi: 10.5281/zenodo.24512015
+    url: "https://zenodo.org/records/24512016"
+    license: CC-BY-4.0
+    authors:
+      - name: "Gekko & Co. Capital SCSp"
+      - name: "RM Management SPF"
+      - family-names: Mendes
+        given-names: Rafael
+        orcid: "https://orcid.org/0009-0008-5585-0631"
+    identifiers:
+      - type: doi
+        value: 10.14293/PR2199.004967.v1
+        description: "ScienceOpen preprint"
