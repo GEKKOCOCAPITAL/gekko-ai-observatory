@@ -1,5 +1,7 @@
 # Validation workshop – expert review form (M3 / O4–O5)
 
+> **Final expert review pack (v0.9.2):** [`GEKKO-AI_Final_Expert_Review_Report.docx`](GEKKO-AI_Final_Expert_Review_Report.docx) (to fill in and sign; [PDF preview](GEKKO-AI_Final_Expert_Review_Report.pdf)). Sections 1-4 are prepared by the project team; findings, conclusion and signature are the expert's own. Rebuild with `node docs/workshop/build_expert_pack.js`.
+
 **Project:** AI and the Transformation of Luxembourg's Financial Sector (LuxFin-AI Observatory)
 **Applicant:** Gekko & Co. Capital SCSp · General Partner: RM MANAGEMENT SPF
 **Toolkit version reviewed:** 0.9.1 · **Run hash (central):** see `outputs/run_manifest.json`
