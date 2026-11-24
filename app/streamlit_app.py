@@ -41,6 +41,11 @@ def simulate(cfg_items: str, scenario: str, n: int):
     return subs, tot, sc.sensitivity(sim, "dL")
 
 
+MODEL_NOTE = ("This dashboard runs the open-source toolkit model (8 CSSF/CAA sub-sectors; central case about +3.8% "
+              "productivity and about -1,200 jobs by 2030). The research report's figures (central case about +5.7% "
+              "productivity and about -1,500 jobs) come from a separate scenario model (Annex A). Both are conditional "
+              "scenarios relative to a no-AI baseline, not forecasts.")
+
 cfg, inp, expo = load()
 names = dict(zip(inp["subsectors"]["code"], inp["subsectors"]["name"]))
 logo = ROOT / "docs/assets/gekko_logo.jpg"
@@ -60,6 +65,7 @@ if page == "Overview":
     c3.metric("Sub-sectors", len(ss))
     st.dataframe(ss[["code", "name", "employment", "employment_status", "exposure", "adoption_2024", "adoption_status"]],
                  hide_index=True, width="stretch")
+    st.caption(MODEL_NOTE)
 
 elif page == "Exposure":
     st.header("Task-level AI exposure (E0/E1/E2 rubric)")
@@ -74,6 +80,7 @@ elif page == "Exposure":
 
 elif page == "Scenarios (O3)":
     st.header("Impact scenarios to 2030 (Monte-Carlo)")
+    st.caption(MODEL_NOTE)
     scen = st.selectbox("Scenario", list(cfg["scenarios"]), index=1, format_func=lambda s: cfg["scenarios"][s]["label"])
     p = copy.deepcopy(cfg["scenarios"][scen])
     with st.expander("Adjust scenario assumptions (mode values; min/max scale proportionally)"):
