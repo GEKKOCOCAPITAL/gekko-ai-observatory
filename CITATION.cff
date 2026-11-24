@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this toolkit, please cite it as below."
-title: "LuxFin-AI Observatory: AI exposure, adoption, impact scenarios and risk scoring for Luxembourg's financial sector"
+title: "GEKKO-AI Observatory: AI exposure, adoption, impact scenarios and risk scoring for Luxembourg's financial sector"
 version: 0.9.2
 date-released: 2026-11-24
 doi: 10.5281/zenodo.24511514
