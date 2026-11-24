@@ -72,6 +72,12 @@ def run_scenario(scen: str, modes: dict, n: int):
     return out
 
 
+MODEL_NOTE = ("This dashboard runs the open-source toolkit model (8 CSSF/CAA sub-sectors; central case about +3.8% "
+              "productivity and about -1,200 jobs by 2030). The research report's figures (central case about +5.7% "
+              "productivity and about -1,500 jobs) come from a separate scenario model (Annex A). Both are conditional "
+              "scenarios relative to a no-AI baseline, not forecasts.")
+
+
 # ------------------------------------------------------------------ views
 def view_overview():
     ui.label("AI and Luxembourg's financial sector - impacts, opportunities and risks").classes("text-2xl font-bold")
@@ -84,6 +90,7 @@ def view_overview():
                 ui.label(lab).classes("text-sm text-gray-600")
                 ui.label(val).classes("text-3xl")
     table(ss[["code", "name", "employment", "employment_status", "exposure", "adoption_2024", "adoption_status"]])
+    ui.label(MODEL_NOTE).classes("text-sm text-gray-600 mt-2")
 
 
 def view_exposure():
@@ -106,6 +113,7 @@ def view_exposure():
 
 def view_scenarios():
     ui.label("Impact scenarios to 2030 (Monte-Carlo)").classes("text-xl font-bold")
+    ui.label(MODEL_NOTE).classes("text-sm text-gray-600")
     state = {"scen": "central", "metric": "jobs", "n": 5000,
              "modes": {k: CFG["scenarios"]["central"][k][1] for k in ["time_saving", "depth_2030", "reinstatement", "ceiling"]}}
     sliders = {}
