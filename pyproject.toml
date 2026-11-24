@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gekko-ai-observatory"
-version = "0.9.1"
+version = "0.9.2"
 description = "LuxFin-AI Observatory: AI exposure, adoption, impact scenarios and risk scoring for Luxembourg's financial sector (prototype)"
 readme = "README.md"
 license = {text = "Apache-2.0"}
