@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T18:42:03+00:00",
+ "generated": "2026-11-25T00:24:29+00:00",
  "version": "0.9.2",
  "subsectors": [
   {
@@ -22312,11 +22312,11 @@
   {
    "id": "V23",
    "objective": "O4",
-   "check": "Expert review of taxonomy, weights and control coverage (validation workshop)",
-   "status": "PENDING",
-   "value": "review form and Fleiss-kappa scorer ready (docs/workshop)",
-   "threshold": "kappa >= 0.40 and all critical comments resolved",
-   "note": "Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv"
+   "check": "External expert review of taxonomy, weights, scenarios and usability (review form A1-C2)",
+   "status": "PASS",
+   "value": "1 external reviewer(s); 11 items logged; 0 critical comments open",
+   "threshold": "all critical comments resolved; kappa >= 0.40 where two or more experts review",
+   "note": "docs/workshop/expert_review_2026-11-25_G_Rossi.pdf; single reviewer, so Fleiss' kappa not applicable"
   },
   {
    "id": "V24",

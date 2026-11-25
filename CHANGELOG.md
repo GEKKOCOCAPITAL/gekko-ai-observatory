@@ -1,5 +1,8 @@
 # Changelog
 
+
+## Unreleased (2026-11-25)
+- External expert review received (Gabriela Rossi, 25 Nov 2026; validated without changes). Signed form in `docs/workshop/`, answers logged as FB-009 to FB-019; validation check V23 now PASS (23 PASS, 2 INFO).
 ## 0.9.2 - 2026-11-24 (public release)
 - Added the research report (November 2026, CC BY 4.0; ScienceOpen preprint DOI 10.14293/PR2199.004967.v1) in docs/research/.
 - Added .zenodo.json metadata for archiving on Zenodo.

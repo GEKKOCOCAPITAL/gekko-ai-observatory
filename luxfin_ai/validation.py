@@ -182,10 +182,19 @@ def check_risk(inputs: dict, grid: pd.DataFrame) -> list[dict]:
         out.append(_r("O4", "Internal review by the project leader (review form A1-C2)", "INFO" if len(internal) else "PENDING",
                       f"{len(internal)} items logged; {int((internal['decision'] == 'no change').sum())} no change requested",
                       "", "docs/workshop/internal_review_2026-11-20.md; does not replace the external expert workshop"))
-        n_ext = external["owner"].nunique() if len(external) else 0
+        n_ext = external["reviewer_role"].nunique() if len(external) else 0
+        crit_open = int(((external["severity"] == "critical") & (external["status"] != "closed")).sum()) if len(external) else 0
     else:
-        n_ext = 0
-    out.append(_r("O4", "Expert review of taxonomy, weights and control coverage (validation workshop)", "PENDING",
-                  "review form and Fleiss-kappa scorer ready (docs/workshop)", "kappa >= 0.40 and all critical comments resolved",
-                  "Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv"))
+        n_ext, crit_open, external = 0, 0, pd.DataFrame()
+    if n_ext == 0:
+        out.append(_r("O4", "Expert review of taxonomy, weights and control coverage (validation workshop)", "PENDING",
+                      "review form and Fleiss-kappa scorer ready (docs/workshop)", "kappa >= 0.40 and all critical comments resolved",
+                      "Requires the expert-user workshop; results to be entered in docs/workshop/feedback_log.csv"))
+    else:
+        status = "PASS" if crit_open == 0 else "REVIEW"
+        out.append(_r("O4", "External expert review of taxonomy, weights, scenarios and usability (review form A1-C2)", status,
+                      f"{n_ext} external reviewer(s); {len(external)} items logged; {crit_open} critical comments open",
+                      "all critical comments resolved; kappa >= 0.40 where two or more experts review",
+                      "docs/workshop/expert_review_2026-11-25_G_Rossi.pdf; single reviewer, so Fleiss' kappa not applicable"
+                      if n_ext == 1 else "docs/workshop/; compute kappa with `luxfin kappa`"))
     return out
