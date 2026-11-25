@@ -21,7 +21,7 @@ from reportlab.platypus import (Image as RLImage, KeepTogether, PageBreak, Parag
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "outputs"
-DST = ROOT / "docs" / "GEKKO-AI_M3_Results_and_Validation_Report.pdf"
+DST = Path(__import__("os").environ.get("REPORT_DST", str(ROOT / "docs" / "GEKKO-AI_M3_Results_and_Validation_Report.pdf")))
 
 GOLD = colors.HexColor("#9c8660")
 INK = colors.HexColor("#252424")
@@ -149,7 +149,7 @@ def cover(c, doc):
     c.setFont("Helvetica", 8.3)
     lines = ["Gekko & Co. Capital SCSp  ·  RCS B311757  ·  54, Rue du Parc, L-3542 Dudelange, Luxembourg",
              "RDI-REDDEX experimental development  ·  Project period 12/10/2026 - 30/11/2026",
-             "Version 0.9.1 - 20 November 2026"]
+             "Version 0.9.2 - 25 November 2026"]
     for i, l in enumerate(lines):
         c.drawCentredString(W / 2, 44 * mm - i * 5 * mm, l)
     c.restoreState()
@@ -186,7 +186,8 @@ S.append(P(
     f"{len(ss)} sub-sectors covering {emp_total:,} employees of CSSF- and CAA-supervised entities, produces "
     f"{3*cfg['run']['n_draws']:,} Monte-Carlo draws in about {man['runtime_s']:.0f} seconds, and executes "
     f"{len(val)} automated validation checks: <b>{cnt.get('PASS',0)} pass, {cnt.get('FAIL',0)} fail</b>, "
-    f"{cnt.get('PENDING',0)} pending (external expert workshop) and {cnt.get('INFO',0)} informational (including the project leader\'s internal review). "
+    f"{cnt.get('PENDING',0)} pending and {cnt.get('INFO',0)} informational (including the project leader\'s internal review); "
+    f"the external expert review (check V23) is complete. "
     f"The unit and integration test suite returns {n_tests-n_fail}/{n_tests} passed."))
 S.append(P("Headline results for 2030 (median and 90% range, relative to a no-AI counterfactual):", base))
 rows = [["", "Labour productivity", "Employment", "Jobs", "Real GVA", "GVA (EUR m)"]]
@@ -218,14 +219,14 @@ S += bullets([
 # 2 Scope
 S.append(P("2. Milestone M3 scope and status", h1))
 S.append(P("M3 requires the toolkit, dashboard, scenario and risk modules to be integrated and validated (O3-O5), with the public report and "
-           "open repository published; the minimal result is a working prototype with documented results. Status at 20 November 2026:"))
+           "open repository published; the minimal result is a working prototype with documented results. Status at 25 November 2026:"))
 rows = [["Item", "Deliverable", "Status", "Location"],
         ["Impact scenario module (O3)", "D4.1", "Built and validated (12 automated checks)", "luxfin_ai/scenarios.py"],
-        ["AI risk taxonomy and scoring grid (O4)", "D4.2", "Built; automated checks pass; expert review pending", "luxfin_ai/risk.py, data/risk_taxonomy.yaml"],
+        ["AI risk taxonomy and scoring grid (O4)", "D4.2", "Built; automated checks pass; validated by external expert review", "luxfin_ai/risk.py, data/risk_taxonomy.yaml"],
         ["Integrated toolkit and dashboard (O5)", "D5.1", "Built; end-to-end run, determinism and 18 tests pass", "luxfin_ai/pipeline.py, app/"],
         ["Internal review by the project leader", "M3", "Done 20/11/2026: agreed on items A1-B3, usability 5/5, no changes requested", "docs/workshop/internal_review_2026-11-20.md"],
-        ["Validation workshop with external expert users", "M3", "Pending - materials ready", "docs/workshop/"],
-        ["Public report and open repository", "D5.2, D5.3", "Repository on GitHub (private); public release pending", "github.com/GEKKOCOCAPITAL/gekko-ai-observatory"],
+        ["External expert review", "M3", "Done 25/11/2026: independent expert (Gabriela Rossi) validated the prototype without changes; agreed on items A1-B3, usability 5/5", "docs/workshop/expert_review_2026-11-25_G_Rossi.pdf"],
+        ["Public report and open repository", "D5.2, D5.3", "Public since 24/11/2026 (release v0.9.2); archived on Zenodo: toolkit DOI 10.5281/zenodo.24511514, research report DOI 10.5281/zenodo.24512015", "github.com/GEKKOCOCAPITAL/gekko-ai-observatory"],
         ["Exposure index (O1) and NLP pipeline (O2)", "D2.1, D3.2", "Interfaces built; v0.1 provisional inputs used until WP2/WP3 outputs are plugged in", "data/tasks.csv, config adoption_signals"]]
 S.append(table(rows, [48 * mm, 18 * mm, 58 * mm, 50 * mm]))
 
@@ -340,19 +341,21 @@ S.append(P("7. Limitations and open items before M3 sign-off", h1))
 S += bullets([
     "<b>Internal review (done).</b> On 20 November 2026 the project leader, Rafael Mendes, reviewed the toolkit with the "
     "expert review form: he agreed on all rated items A1-B3 (taxonomy, scoring, AI Act classification, scenarios, exposure, caveats), "
-    "rated usability 5/5, said he would use all four main outputs and requested no changes (feedback log FB-001 to FB-008). As an internal, single-reviewer review it "
-    "does not replace the external workshop below.",
-    "<b>Expert validation workshop (pending).</b> O4 requires validation by expert review and M3 a workshop with expert users and a feedback log. "
-    "The review form, rating template, Fleiss' kappa scorer (<font face='Courier'>luxfin kappa</font>) and feedback log are ready in docs/workshop; "
-    "acceptance criteria: kappa of at least 0.40 and every critical comment resolved or justified.",
+    "rated usability 5/5, said he would use all four main outputs and requested no changes (feedback log FB-001 to FB-008). As an internal review it "
+    "is complemented by the external expert review below.",
+    "<b>External expert review (done).</b> On 25 November 2026 an independent expert, Gabriela Rossi (self-employed expert consultant; risk and compliance, "
+    "fund industry, banking, academic), reviewed the prototype with the final expert review form. She agreed on all rated items A1-B3, rated usability 5/5, "
+    "would use all outputs, raised no critical or other comments, and concluded that the M3 prototype is validated without changes "
+    "(signed form in docs/workshop; feedback log FB-009 to FB-019). With a single external reviewer, Fleiss' kappa does not apply; "
+    "the form, rating template and kappa scorer (<font face='Courier'>luxfin kappa</font>) remain available to extend the review to further experts.",
     "<b>Provisional inputs.</b> Task ratings are v0.1 (LLM-assisted, not yet human-validated); four sub-sectors use proxy adoption rates; "
     "insurance employment is a 2020 figure; GVA for six sub-sectors is allocated by employment. Replacing these with WP2/WP3 outputs and CAA/STATEC "
     "data requires no code change.",
     "<b>Model scope.</b> Partial-equilibrium, sector-level model with a single demand elasticity; no resident vs cross-border split, wage effects "
     "or second-round effects on the rest of the economy (LFF estimates one additional job elsewhere per financial-sector job).",
     "<b>Out of scope in v0.9.</b> Legal, audit and consulting services and SOPARFI holdings (included in the LFF 73,272 total).",
-    "<b>Publication.</b> The repository is on GitHub (GEKKOCOCAPITAL/gekko-ai-observatory, release v0.9.1) under an Apache-2.0 "
-    "licence and is kept private until the external workshop; the public report (D5.2) and public release (D5.3) follow then.",
+    "<b>Publication.</b> The repository is public on GitHub (GEKKOCOCAPITAL/gekko-ai-observatory, release v0.9.2) under an Apache-2.0 "
+    "licence since 24 November 2026 and archived on Zenodo (toolkit DOI 10.5281/zenodo.24511514; research report DOI 10.5281/zenodo.24512015).",
 ])
 
 # 8 Sources
