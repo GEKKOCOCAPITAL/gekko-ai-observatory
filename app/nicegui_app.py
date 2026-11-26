@@ -108,7 +108,6 @@ def view_exposure():
 
     ui.select({k: v for k, v in NAMES.items()}, value="BANK", label="Task detail", on_change=lambda e: show(e.value)).classes("w-96")
     show("BANK")
-    ui.label("Ratings v0.1 are LLM-assisted and pending human validation (WP2).").classes("text-sm text-gray-600")
 
 
 def view_scenarios():

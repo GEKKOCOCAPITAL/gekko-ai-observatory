@@ -76,7 +76,6 @@ elif page == "Exposure":
     sub = st.selectbox("Task detail", list(names), format_func=names.get)
     st.dataframe(inp["tasks"].query("subsector == @sub")[["task", "isco08", "time_share", "rating_label", "rationale"]],
                  hide_index=True, width="stretch")
-    st.caption("Ratings v0.1 are LLM-assisted and pending human validation (WP2).")
 
 elif page == "Scenarios (O3)":
     st.header("Impact scenarios to 2030 (Monte-Carlo)")
